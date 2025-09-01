@@ -11,7 +11,26 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <!-- For Desktop  -->
+    <div class="d-lg-flex justify-content-end d-md-none" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Tours</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-disabled="true">Reviews</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" aria-disabled="true">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- // For Mobile  -->
+    <div class="collapse navbar-collapse d-lg-flex justify-content-end d-md-none" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Tours</a>

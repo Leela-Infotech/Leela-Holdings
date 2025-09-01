@@ -6,6 +6,7 @@
 ?>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
   <div class="row w-100">
     <div class="col-lg-6 d-flex justify-content-between">
     <a class="navbar-brand" href="#"><img src="/wp-content/uploads/2025/09/logo.png" width="100px" alt=""></a>
@@ -47,6 +48,7 @@
           <a class="nav-link" aria-disabled="true">Contact</a>
         </li>
       </ul>
+</div>
     </div>
   </div>
 </nav>

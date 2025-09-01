@@ -20,6 +20,6 @@
 
     <div id="page" class="site">
     <header id="masthead" class="site_header">Header</header>
-    <?php get_template_part( '/template-parts/header/nav.php'); ?>
+    <?php get_template_part( '/template-parts/header/nav'); ?>
     <div id="content" class="site-content"></div>
     </div>

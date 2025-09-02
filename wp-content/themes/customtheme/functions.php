@@ -29,17 +29,19 @@ add_action( 'wp_enqueue_scripts', 'leelaHoldings_enqueue_scripts');
 
 
 
+function custom_theme_footer_menus(){
+    register_nav_menus(
+    array(
+            'footer-travel'      => __('Footer Travel'),
+            'footer-offices'     => __('Footer Offices'),
+            'footer-activities'  => __('Footer Activities'),
+            'footer-blogs'       => __('Footer Blogs'),
+            'footer-about'       => __('Footer About'),
+            'footer-contact'     => __('Footer Contact'),
+        )
+)
+}
+add_action('init', 'custom_theme_footer_menus');
 
-register_nav_menus(
-    array('Office-menu'=>'Office Menu')
-)
-register_nav_menus(
-    array('Activity-menu'=>'Activity Menu')
-)
-register_nav_menus(
-    array('Travel-Blog-menu'=>'Travel Blog Menu')
-)
-register_nav_menus(
-    array('About-menu'=>'About Menu')
-)
+
 ?>

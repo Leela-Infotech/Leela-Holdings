@@ -7,43 +7,51 @@
        <main class="d-flex flex-column">
          <div class="container py-5">
             <div class="row ">
-                <div class="col-lg-2">
-                    <h3>Travel</h3>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Travel</h5>
                    
                 </div>
-                  <div class="col-lg-2">
-                    <h3>Our Offices</h3>
+                  <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Our Offices</h5>
                     <?php
-                    wp_nav_menu(array('
-                    theme_location'=>'Office-menu',
-                    'menu-class'=>'nav'))
+                     wp_nav_menu(array(
+          'theme_location' => 'footer-offices',
+          'menu_class'     => 'list-unstyled',
+          'container'      => false
+        ));
                     ?>
                 </div>
-                  <div class="col-lg-2">
+                  <div class="col-lg-2 col-md-6 mb-4">
                     <h3>Our Activities</h3>
                     <?php
-                    wp_nav_menu(array('
-                    theme_location'=>'Activity-menu',
-                    'menu-class'=>'nav'))
+                   wp_nav_menu(array(
+          'theme_location' => 'footer-activities',
+          'menu_class'     => 'list-unstyled',
+          'container'      => false
+        ));
                     ?>
                 </div>
-                 <div class="col-lg-2">
+                 <div class="col-lg-2 col-md-6 mb-4">
                     <h3>Travel Blogs</h3>
                     <?php
-                    wp_nav_menu(array('
-                    theme_location'=>'Travel-Blog-menu',
-                    'menu-class'=>'nav'))
+                    wp_nav_menu(array(
+          'theme_location' => 'footer-blogs',
+          'menu_class'     => 'list-unstyled',
+          'container'      => false
+        ));
                     ?>
                 </div>
-                 <div class="col-lg-2">
+                 <div class="col-lg-2 col-md-6 mb-4">
                     <h3>About Us</h3>
                     <?php
-                    wp_nav_menu(array('
-                    theme_location'=>'About-menu',
-                    'menu-class'=>'nav'))
+                     wp_nav_menu(array(
+          'theme_location' => 'footer-about',
+          'menu_class'     => 'list-unstyled',
+          'container'      => false
+        ));
                     ?>
                 </div>
-                <div class="col-lg-2">Contact Us</div>
+                <div class="col-lg-2 col-md-6 mb-4">Contact Us</div>
             </div>
         </div>
       

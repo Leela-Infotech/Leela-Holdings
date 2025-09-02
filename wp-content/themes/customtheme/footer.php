@@ -14,14 +14,14 @@
               <p>Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
             </div>
             <div class="row">
-              <div class="col-8"><input type="email"></div>
+              <div class="col-8"><input type="email" class="w-100" style="height:38px"></div>
               <div class="col-4">
                 <button class="btn bg-black text-white py-3 px-2">Subscribe</button>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-4 mb-4">
-            
+            <img src="/customtheme/images/icons/mailbox.png" alt="">
           </div>
         </div>
     </div>

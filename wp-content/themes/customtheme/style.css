@@ -40,7 +40,7 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
     .mail-box-container{
   background-color: #CDEAE1;
   min-height: 200px;
-  top: -200px;
+  top: -100px;
   left: 50%;
   transform: translate(-50%, -50%);
 }

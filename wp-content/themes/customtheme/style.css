@@ -16,6 +16,7 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 
 .list-unstyled li a{
     color: white;
+    text-decoration: none;
 }
 .list-unstyled li a:hover {
     color: #ccc; 

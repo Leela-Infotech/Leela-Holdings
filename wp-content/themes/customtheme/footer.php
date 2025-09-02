@@ -59,16 +59,23 @@ $socials = [
 ];
 
 foreach ($socials as $network => $icon_field) {
-    $icon = get_field($icon_field, 'option'); // from Options page
-    $link = get_field($network . '_link', 'option'); // assuming you added link fields
-    
+    $icon = lh_get_footer_setting($icon_field); 
+    $link = lh_get_footer_setting($network . '-link'); // add these fields if you want links
+
     if ($icon) {
-        echo '<a href="' . esc_url($link) . '" target="_blank" rel="noopener">
-                <i class="' . esc_attr($icon) . '"></i>
-              </a>';
+        // If field returns a Font Awesome class (e.g., "fab fa-facebook")
+        if (strpos($icon, 'fa-') !== false) {
+            echo '<a href="' . esc_url($link) . '" target="_blank" rel="noopener">
+                    <i class="' . esc_attr($icon) . '"></i>
+                  </a>';
+        } else {
+            // If field already returns HTML (<i>...</i>)
+            echo '<a href="' . esc_url($link) . '" target="_blank" rel="noopener">' . $icon . '</a>';
+        }
     }
 }
 ?>
+
   </div>
 
                    

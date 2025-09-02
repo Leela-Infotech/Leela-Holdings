@@ -24,8 +24,13 @@ function leelaHoldings_enqueue_scripts() {
     wp_enqueue_script('main-js');
     wp_enqueue_script('bootstrap-js');
 
-
-   
 }
 add_action( 'wp_enqueue_scripts', 'leelaHoldings_enqueue_scripts');
+
+
+
+
+register_nav_menus(
+    array('primary-menu'=>'Top Menu')
+)
 ?>

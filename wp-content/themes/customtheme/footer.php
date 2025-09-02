@@ -3,7 +3,7 @@
  * Footer Template
  */
 ?>
-<footer>footer content</footer>
+<footer></footer>
 
 <?php wp_footer(); ?>
     </body>

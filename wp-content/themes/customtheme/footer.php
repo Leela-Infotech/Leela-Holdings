@@ -2,11 +2,26 @@
 /**
  * Footer Template
  */
+
+$footer_images = [
+    'mailbox' => [
+        'src' => get_template_directory_uri() . '/images/icons/mailbox.png',
+        'alt' => 'Mailbox Icon'
+    ],
+    'logo' => [
+        'src' => get_template_directory_uri() . '/images/icons/logo.png',
+        'alt' => 'Travel Logo'
+    ],
+    'phone' => [
+        'src' => get_template_directory_uri() . '/images/icons/phone.png',
+        'alt' => 'Phone Icon'
+    ],
+];
 ?>
 <footer class="position-relative main-footer">
   <div class="mail-box-container w-100 rounded text-center container position-absolute">
         <div class="row">
-          <div class="col-lg-8 col-md-8 p-4 text-left">
+          <div class="col-lg-8 col-md-8 p-4 text-start">
             <h5>SUBSCRIBE</h5>
             <H5>NEWSLETTER</H5>
             <div>
@@ -21,7 +36,8 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-4">
-            <img src="/customtheme/images/icons/mailbox.png" alt="">
+            <img src="<?php echo esc_url( $footer_images['mailbox']['src'] ); ?>"
+             alt="<?php echo esc_attr( $footer_images['mailbox']['alt'] ); ?>" class="img-fluid mb-3">
           </div>
         </div>
     </div>

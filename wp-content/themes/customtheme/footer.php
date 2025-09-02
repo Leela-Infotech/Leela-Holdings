@@ -3,7 +3,13 @@
  * Footer Template
  */
 ?>
-<footer class="bg-black text-white text-center">
+<footer class="position-relative">
+  <div class="w-100 bg-secondary rounded text-center container position-absolute" style="min-height: 100px; top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);">
+        Hello
+    </div>
+<footer class="bg-black text-white text-center py-5">
        <main class="d-flex flex-column">
          <div class="container py-5">
             <div class="row ">
@@ -73,7 +79,7 @@
         <div class="bg-secondary text-center p-2">© 2025 Leela Infotech | Built by Atul Chambyal</div>
          </main>
     </footer>
-
+ </footer>
 <?php wp_footer(); ?>
     </body>
 </html>

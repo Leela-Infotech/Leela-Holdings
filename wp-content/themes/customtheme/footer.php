@@ -60,21 +60,29 @@ $socials = [
 
 foreach ($socials as $network => $icon_field) {
     $icon = lh_get_footer_setting($icon_field); 
-    $link = lh_get_footer_setting($network . '-link'); // add these fields if you want links
+    $link = lh_get_footer_setting($network . '-link'); // URL field in ACF
 
-    if ($icon) {
-        // If field returns a Font Awesome class (e.g., "fab fa-facebook")
-        if (strpos($icon, 'fa-') !== false) {
+    if ($icon && $link) {
+        // CASE 1: Font Awesome class (string)
+        if (is_string($icon) && strpos($icon, 'fa-') !== false) {
             echo '<a href="' . esc_url($link) . '" target="_blank" rel="noopener">
                     <i class="' . esc_attr($icon) . '"></i>
                   </a>';
+
+        // CASE 2: Uploaded Image (ACF image array)
+        } elseif (is_array($icon) && isset($icon['url'])) {
+            echo '<a href="' . esc_url($link) . '" target="_blank" rel="noopener">
+                    <img src="' . esc_url($icon['url']) . '" alt="' . esc_attr($network) . '" style="width:24px; height:auto;" />
+                  </a>';
+
+        // CASE 3: Already full HTML
         } else {
-            // If field already returns HTML (<i>...</i>)
             echo '<a href="' . esc_url($link) . '" target="_blank" rel="noopener">' . $icon . '</a>';
         }
     }
 }
 ?>
+
 
   </div>
 

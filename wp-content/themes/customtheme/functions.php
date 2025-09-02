@@ -31,6 +31,6 @@ add_action( 'wp_enqueue_scripts', 'leelaHoldings_enqueue_scripts');
 
 
 register_nav_menus(
-    array('primary-menu'=>'Top Menu')
+    array('Travel-menu'=>'Travel Menu')
 )
 ?>

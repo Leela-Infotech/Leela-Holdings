@@ -22,7 +22,7 @@
                     ?>
                 </div>
                   <div class="col-lg-2 col-md-6 mb-4">
-                    <h3>Our Activities</h3>
+                    <h5>Our Activities</h5>
                     <?php
                    wp_nav_menu(array(
           'theme_location' => 'footer-activities',
@@ -32,7 +32,7 @@
                     ?>
                 </div>
                  <div class="col-lg-2 col-md-6 mb-4">
-                    <h3>Travel Blogs</h3>
+                    <h5>Travel Blogs</h5>
                     <?php
                     wp_nav_menu(array(
           'theme_location' => 'footer-blogs',
@@ -42,7 +42,7 @@
                     ?>
                 </div>
                  <div class="col-lg-2 col-md-6 mb-4">
-                    <h3>About Us</h3>
+                    <h5>About Us</h5>
                     <?php
                      wp_nav_menu(array(
           'theme_location' => 'footer-about',

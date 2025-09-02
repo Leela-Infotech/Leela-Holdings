@@ -36,7 +36,7 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@media only screen and (max-width:444px){
+@media only screen and (max-width:540px){
     .mail-box-container{
   background-color: #CDEAE1;
   min-height: 200px;

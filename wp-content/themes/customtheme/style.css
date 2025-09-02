@@ -13,11 +13,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: leelaHoldings
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
 */
-
+.list-unstyled li{
+    padding: 0px 12px;
+}
 .list-unstyled li a{
-    color: white;
+    color: B2B2B2;
     text-decoration: none;
 }
 .list-unstyled li a:hover {
-    color: #ccc; 
+    color: white; 
 }

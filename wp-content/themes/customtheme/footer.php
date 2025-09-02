@@ -43,9 +43,9 @@ $footer_images = [
         </div>
     </div>
 <footer class="bg-black text-white text-center pt-5">
-       <main class="d-flex flex-column">
+       <main class="d-flex flex-column mt-5">
          <div class="container py-5">
-            <div class="row ">
+            <div class="row pt-4">
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h5>Travel</h5>
 

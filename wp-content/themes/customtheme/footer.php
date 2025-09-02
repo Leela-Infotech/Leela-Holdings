@@ -3,13 +3,29 @@
  * Footer Template
  */
 ?>
-<footer class="position-relative">
-  <div class="w-100 bg-secondary rounded text-center container position-absolute" style="min-height: 100px; top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);">
-        Hello
+<footer class="position-relative main-footer">
+  <div class="mail-box-container w-100 rounded text-center container position-absolute">
+        <div class="row">
+          <div class="col-lg-8 col-md-8 mb-4">
+            <h5>SUBSCRIBE</h5>
+            <H5>NEWSLETTER</H5>
+            <div>
+              <h6>The Travel</h6>
+              <p>Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
+            </div>
+            <div class="row">
+              <div class="col-8"><input type="email"></div>
+              <div class="col-4">
+                <button class="btn bg-black text-white py-3 px-2">Subscribe</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 mb-4">
+            
+          </div>
+        </div>
     </div>
-<footer class="bg-black text-white text-center py-5">
+<footer class="bg-black text-white text-center pt-5">
        <main class="d-flex flex-column">
          <div class="container py-5">
             <div class="row ">

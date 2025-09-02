@@ -26,3 +26,13 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 .footer-logos .footer-logo-img{
     max-width: 40px !important;
 }
+.main-footer{
+    margin-top: 200px;
+}
+.mail-box-container{
+  background-color: #CDEAE1;
+  min-height: 200px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

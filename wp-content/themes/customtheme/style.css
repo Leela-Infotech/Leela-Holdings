@@ -14,10 +14,10 @@ Text Domain: leelaHoldings
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
 */
 .list-unstyled li{
-    padding: 0px 12px;
+    padding-bottom:12px;
 }
 .list-unstyled li a{
-    color: B2B2B2;
+    color: #B2B2B2;
     text-decoration: none;
 }
 .list-unstyled li a:hover {

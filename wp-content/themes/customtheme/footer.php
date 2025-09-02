@@ -6,7 +6,7 @@
 <footer class="position-relative main-footer">
   <div class="mail-box-container w-100 rounded text-center container position-absolute">
         <div class="row">
-          <div class="col-lg-8 col-md-8 mb-4">
+          <div class="col-lg-8 col-md-8 p-4 text-left">
             <h5>SUBSCRIBE</h5>
             <H5>NEWSLETTER</H5>
             <div>
@@ -16,11 +16,11 @@
             <div class="row">
               <div class="col-8"><input type="email" class="w-100" style="height:38px"></div>
               <div class="col-4">
-                <button class="btn bg-black text-white py-3 px-2">Subscribe</button>
+                <button class="btn bg-black text-white">Subscribe</button>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4 mb-4">
+          <div class="col-lg-4 col-md-4">
             <img src="/customtheme/images/icons/mailbox.png" alt="">
           </div>
         </div>

@@ -2,7 +2,6 @@
 /**
  * Footer Template
  */
-
 $footer_images = [
     'mailbox' => [
         'src' => get_template_directory_uri() . '/images/icons/mailbox.png',
@@ -18,6 +17,8 @@ $footer_images = [
     ],
 ];
 ?>
+
+<div class="h-100">
 <footer class="position-relative main-footer">
   <div class="mail-box-container w-100 rounded text-center container position-absolute">
         <div class="row">
@@ -35,7 +36,7 @@ $footer_images = [
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 d-flex align-items-end justify-content-center">
             <img src="<?php echo esc_url( $footer_images['mailbox']['src'] ); ?>"
              alt="<?php echo esc_attr( $footer_images['mailbox']['alt'] ); ?>" class="img-fluid w-75 ">
           </div>
@@ -48,7 +49,7 @@ $footer_images = [
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h5>Travel</h5>
 
-  <div class="footer-logos d-flex flex-wrap align-items-center gap-3">
+  <div class="footer-logos d-flex flex-wrap align-items-center gap-3 justify-content-center">
     <?php
     for ( $i = 1; $i <= 4; $i++ ) {
         $img = lh_get_footer_setting( "footer_image_{$i}" );
@@ -112,6 +113,7 @@ $footer_images = [
          </main>
     </footer>
  </footer>
+ </div>
 <?php wp_footer(); ?>
     </body>
 </html>

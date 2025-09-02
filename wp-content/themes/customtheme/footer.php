@@ -50,17 +50,25 @@ $footer_images = [
                     <h5>Travel</h5>
 
   <div class="footer-logos d-flex flex-wrap align-items-center gap-3 justify-content-center">
-    <?php
-    for ( $i = 1; $i <= 4; $i++ ) {
-        $img = lh_get_footer_setting( "footer_image_{$i}" );
-        if ( $img && is_array( $img ) ) {
-            // choose a WP size to keep things light: 'thumbnail', 'medium', etc.
-            $src = !empty($img['sizes']['medium']) ? $img['sizes']['medium'] : $img['url'];
-            $alt = !empty($img['alt']) ? $img['alt'] : "Footer image {$i}";
-            echo '<img src="' . esc_url($src) . '" alt="' . esc_attr($alt) . '" class="footer-logo-img" loading="lazy">';
-        }
+<?php
+$socials = [
+    'instagram' => 'instagram-icon',
+    'facebook'  => 'facebook-icon',
+    'twitter'   => 'twitter-icon',
+    'linkedin'  => 'linkedin-icon'
+];
+
+foreach ($socials as $network => $icon_field) {
+    $icon = get_field($icon_field, 'option'); // from Options page
+    $link = get_field($network . '_link', 'option'); // assuming you added link fields
+    
+    if ($icon) {
+        echo '<a href="' . esc_url($link) . '" target="_blank" rel="noopener">
+                <i class="' . esc_attr($icon) . '"></i>
+              </a>';
     }
-    ?>
+}
+?>
   </div>
 
                    

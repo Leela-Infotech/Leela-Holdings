@@ -9,6 +9,21 @@
             <div class="row ">
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h5>Travel</h5>
+
+  <div class="footer-logos d-flex flex-wrap align-items-center gap-3">
+    <?php
+    for ( $i = 1; $i <= 4; $i++ ) {
+        $img = lh_get_footer_setting( "footer_image_{$i}" );
+        if ( $img && is_array( $img ) ) {
+            // choose a WP size to keep things light: 'thumbnail', 'medium', etc.
+            $src = !empty($img['sizes']['medium']) ? $img['sizes']['medium'] : $img['url'];
+            $alt = !empty($img['alt']) ? $img['alt'] : "Footer image {$i}";
+            echo '<img src="' . esc_url($src) . '" alt="' . esc_attr($alt) . '" class="footer-logo-img" loading="lazy">';
+        }
+    }
+    ?>
+  </div>
+
                    
                 </div>
                   <div class="col-lg-2 col-md-6 mb-4">

@@ -39,7 +39,7 @@ function custom_theme_footer_menus(){
             'footer-about'       => __('Footer About'),
             'footer-contact'     => __('Footer Contact'),
         )
-)
+    );
 }
 add_action('init', 'custom_theme_footer_menus');
 

@@ -28,7 +28,7 @@ function leelaHoldings_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'leelaHoldings_enqueue_scripts');
 
 
-
+// Footer Menus called
 function custom_theme_footer_menus(){
     register_nav_menus(
     array(
@@ -42,6 +42,17 @@ function custom_theme_footer_menus(){
     );
 }
 add_action('init', 'custom_theme_footer_menus');
+
+
+
+// Footer logos called From ACF
+function lh_get_footer_setting( $field_name ) {
+    $page = get_page_by_path( 'footer-settings' ); // slug of the page
+    if ( $page ) {
+        return get_field( $field_name, $page->ID );
+    }
+    return false;
+}
 
 
 ?>

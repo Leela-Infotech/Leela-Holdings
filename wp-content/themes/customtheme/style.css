@@ -17,7 +17,7 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 .menu{
 list-style: none;
 }
-.menu>.menu-item{
+.menu .menu-item> a{
     color: white;
     text-decoration: none;
 }

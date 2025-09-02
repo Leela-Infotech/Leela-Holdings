@@ -3,10 +3,10 @@
  * Footer Template
  */
 ?>
-<footer class="bg-black text-white">
+<footer class="bg-black text-white text-center">
        <main class="d-flex flex-column">
          <div class="container py-5">
-            <div class="row">
+            <div class="row ">
                 <div class="col-lg-2">Travel
                     <?php
                     wp_nav_menu(array('

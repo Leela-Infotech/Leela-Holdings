@@ -21,7 +21,7 @@ $footer_images = [
 <footer class="position-relative main-footer">
   <div class="mail-box-container w-100 rounded text-center container position-absolute">
         <div class="row">
-          <div class="col-lg-8 col-md-8 p-4 text-start">
+          <div class="col-lg-8 col-md-6 p-4 text-start">
             <h5>SUBSCRIBE</h5>
             <H5>NEWSLETTER</H5>
             <div>
@@ -35,9 +35,9 @@ $footer_images = [
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-4">
+          <div class="col-lg-4 col-md-6">
             <img src="<?php echo esc_url( $footer_images['mailbox']['src'] ); ?>"
-             alt="<?php echo esc_attr( $footer_images['mailbox']['alt'] ); ?>" class="img-fluid mb-3">
+             alt="<?php echo esc_attr( $footer_images['mailbox']['alt'] ); ?>" class="img-fluid w-75 ">
           </div>
         </div>
     </div>

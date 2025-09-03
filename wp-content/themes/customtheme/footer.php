@@ -51,10 +51,6 @@ $footer_images = [
 
   <div class="footer-logos d-flex flex-wrap align-items-center gap-3 justify-content-center">
 
-<?php 
-[acf field="{$field_name}"]
-<img src="<?php the_field('image_test'); ?>" alt="" />
-?>
 
 
   </div>

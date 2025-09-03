@@ -50,14 +50,14 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 }
 
 
-#navbarNav .menu-main-menu .menu-item a{
+#navbarNav .navbar-nav .menu-item a{
     text-decoration: none;
     color: green;
     font-weight: bold;
     font-size: 32px;
     padding: 10px 25px;
 }
-#navbarNav .menu-main-menu .menu-item a:hover{
+#navbarNav .navbar-nav .menu-item a{
     border-radius: 50px;
     background-color: white;
 }

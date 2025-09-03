@@ -29,10 +29,13 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 .main-footer{
     margin-top: 400px;
 }
+.main-footer .footer-container{
+    padding-top: 150px;
+}
 .mail-box-container{
   background-color: #CDEAE1;
   min-height: 200px;
-  top: 0px;
+  top: 50px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -40,7 +43,7 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
     .mail-box-container{
   background-color: #CDEAE1;
   min-height: 200px;
-  top: -100px;
+  top: -50px;
   left: 50%;
   transform: translate(-50%, -50%);
 }

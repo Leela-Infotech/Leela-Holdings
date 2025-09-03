@@ -42,7 +42,7 @@ $footer_images = [
                 </div>
             </div>
         </div>
-        <footer class="bg-black text-white text-center pt-5">
+        <footer class="bg-black text-white text-center pt-5 footer-container">
             <main class="d-flex flex-column mt-5">
                 <div class="container py-5">
                     <div class="row pt-4">

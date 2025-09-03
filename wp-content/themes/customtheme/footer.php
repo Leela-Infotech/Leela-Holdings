@@ -53,10 +53,10 @@ $footer_images = [
 
 <?php
 $socials = [
-    'facebook'  => ['icon' => 'facebook_icon', 'url' => 'facebook_link'],
-    'instagram' => ['icon' => 'instagram_icon', 'url' => 'instagram_link'],
-    'linkedin'  => ['icon' => 'linkedin_icon', 'url' => 'linkedin_link'],
-    'twitter'   => ['icon' => 'twitter_icon', 'url' => 'twitter_link'],
+    'facebook'  => ['icon' => 'facebook-icon', 'url' => 'facebook-link'],
+    'instagram' => ['icon' => 'instagram-icon', 'url' => 'instagram-link'],
+    'linkedin'  => ['icon' => 'linkedin-icon', 'url' => 'linkedin-link'],
+    'twitter'   => ['icon' => 'twitter-icon', 'url' => 'twitter-link'],
 ];
 
 echo '<div class="footer-logos d-flex flex-wrap align-items-center gap-3 justify-content-center">';
@@ -70,18 +70,14 @@ foreach ($socials as $key => $social) {
         $src = is_array($icon) ? ($icon['url'] ?? '') : $icon;
         $alt = is_array($icon) ? ($icon['alt'] ?? ucfirst($key).' icon') : ucfirst($key).' icon';
         $img = '<img src="' . esc_url($src) . '" alt="' . esc_attr($alt) . '" width="35" height="35">';
-        if ($src) {
-           echo '<a href="' . esc_url($link) .'" target="_blank">'. $img . '</a>';
 
-            // ✅ Wrap with <a> if URL exists
-            if ($link) {
-                echo '<a href="' . esc_url($link) . '" target="_blank" rel="noopener">' . $img . '</a>';
-            } else {
+        if ($link) {
+           echo '<a href="' . esc_url($link) .'" target="_blank">'. $img . '</a>';
+         } else {
                 echo $img; // just show image if no link
             }
         }
     }
-}
 
 echo '</div>';
 ?>

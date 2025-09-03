@@ -13,8 +13,30 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: leelaHoldings
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
 */
-/* color  */
+/* Swiper start  */
+.swiper {
+  width: 100%;
+  height: 400px;
+}
 
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Swiper end  */
+/* color  */
 .text-10{
     font-size: 10px !important;
     margin: 0px !important;

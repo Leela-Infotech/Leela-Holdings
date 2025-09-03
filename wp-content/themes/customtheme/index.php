@@ -17,6 +17,8 @@ trait single{
     echo "Hello world";
     }
 }
+$base = new base();
+$base->single;
 ?>
 
 <?php

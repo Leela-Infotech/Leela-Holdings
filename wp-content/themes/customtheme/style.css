@@ -23,6 +23,7 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 }
 .btn a{
    text-decoration: none;
+   color: white;
     font-weight: 500;
     font-size: 20px;
     padding: 10px 25px;

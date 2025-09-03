@@ -48,11 +48,7 @@ $footer_images = [
                     <div class="row pt-4">
                         <div class="col-lg-2 col-md-6 mb-4">
                             <h5>Travel</h5>
-                            <div class="footer-logos d-flex flex-wrap align-items-center gap-3 justify-content-center">
-                                <a href="#"> <img src="<?php echo esc_url($footer_images['']['src']); ?>"> </a>
-                            </div>
-
-
+                            <?php echo do_shortcode('[wpzoom_social_icons id="69"]'); ?>
                         </div>
                         <div class="col-lg-2 col-md-6 mb-4">
                             <h5>Our Offices</h5>

@@ -17,7 +17,7 @@
 <div class="col-lg-6 d-lg-flex justify-content-end d-none" id="navbarNav">
      <?php
                             wp_nav_menu(array(
-                                'theme_location' => 'footer-activities',
+                                'theme_location' => 'main-menu',
                                 'menu_class' => 'list-unstyled',
                                 'container' => false
                             ));

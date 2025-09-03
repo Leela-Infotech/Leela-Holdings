@@ -14,7 +14,16 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 </div>
-    <!-- For Desktop  -->
+<div class="col-lg-6 d-lg-flex justify-content-end d-none" id="navbarNav">
+     <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer-activities',
+                                'menu_class' => 'list-unstyled',
+                                'container' => false
+                            ));
+                            ?>
+</div>
+    <!-- For Desktop 
     <div class="col-lg-6 d-lg-flex justify-content-end d-none" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -32,7 +41,7 @@
       </ul>
     </div>
 
-    <!-- // For Mobile  -->
+    // For Mobile 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav d-lg-none">
         <li class="nav-item">
@@ -48,7 +57,7 @@
           <a class="nav-link" aria-disabled="true">Contact</a>
         </li>
       </ul>
-</div>
+</div> -->
     </div>
   </div>
 </nav>

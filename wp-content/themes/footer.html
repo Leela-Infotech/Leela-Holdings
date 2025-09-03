@@ -1,42 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/customtheme/assets/src/library/css/bootstrap.min.css">
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 400px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
 </head>
+
 <body>
-    <div style="height: 200px;" class=" w-100">
- Hello world
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="/customtheme//images/images/banner.png" alt=""></div>
+      <div class="swiper-slide"><img src="/customtheme//images//images/banner2.png" alt=""></div>
     </div>
-   
-     <footer class="position-relative" >
+    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+    <!-- <div class="swiper-pagination"></div> -->
+  </div>
 
-        <div class="w-100 bg-secondary rounded text-center container position-absolute" style="min-height: 100px; top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);">
-        Hello
-    </div>
-    <footer class="bg-black text-white py-5">
-       <main class="d-flex flex-column">
-         <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-2">Travel</div>
-                <div class="col-lg-2">Our Offices</div>
-                <div class="col-lg-2">Our Activities</div>
-                <div class="col-lg-2">Travel Blogs</div>
-                <div class="col-lg-2">About Us</div>
-                <div class="col-lg-2">Contact Us</div>
-            </div>
-        </div>
-      
-        <div class="bg-secondary text-center p-2">© 2025 Leela Infotech | Built by Atul Chambyal</div>
-         </main>
-    </footer>
-     </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
 
-   
+<div>
+    class
+</div>
 </body>
+
 </html>

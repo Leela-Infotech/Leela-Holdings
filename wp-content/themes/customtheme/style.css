@@ -31,7 +31,7 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 400px;
   object-fit: cover;
 }
 

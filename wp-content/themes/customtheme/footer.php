@@ -53,10 +53,10 @@ $footer_images = [
 
 <?php
 $socials = [
-    'facebook'  => ['icon' => 'facebook-icon', 'url' => 'facebook-link'],
-    'instagram' => ['icon' => 'instagram-icon', 'url' => 'instagram-link'],
-    'linkedin'  => ['icon' => 'linkedin-icon', 'url' => 'linkedin-link'],
-    'twitter'   => ['icon' => 'twitter-icon', 'url' => 'twitter-link'],
+    'facebook'  => ['icon' => 'facebook_icon', 'url' => 'facebook_link'],
+    'instagram' => ['icon' => 'instagram_icon', 'url' => 'instagram_link'],
+    'linkedin'  => ['icon' => 'linkedin_icon', 'url' => 'linkedin_link'],
+    'twitter'   => ['icon' => 'twitter_icon', 'url' => 'twitter_link'],
 ];
 
 echo '<div class="footer-logos d-flex flex-wrap align-items-center gap-3 justify-content-center">';

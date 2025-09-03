@@ -59,6 +59,8 @@ $socials = [
     'twitter'   => ['icon' => 'twitter-icon', 'url' => 'twitter-link'],
 ];
 
+echo '<div class="footer-logos d-flex flex-wrap align-items-center gap-3 justify-content-center">';
+
 foreach ($socials as $key => $social) {
     $icon = get_footer_field($social['icon']);
     $link = get_footer_field($social['url']);
@@ -68,12 +70,21 @@ foreach ($socials as $key => $social) {
         $alt = is_array($icon) ? ($icon['alt'] ?? ucfirst($key).' icon') : ucfirst($key).' icon';
 
         if ($src) {
-            $img = '<img src="' . esc_url($src) . '" alt="' . esc_attr($alt) . '">';
-            echo $link ? '<a href="' . esc_url($link) . '" target="_blank" rel="noopener">'.$img.'</a>' : $img;
+            $img = '<img src="' . esc_url($src) . '" alt="' . esc_attr($alt) . '" width="35" height="35">';
+            
+            // wrap image in <a> only if link exists
+            if ($link) {
+                echo '<a href="' . esc_url($link) . '" target="_blank" rel="noopener">' . $img . '</a>';
+            } else {
+                echo $img;
+            }
         }
     }
 }
+
+echo '</div>';
 ?>
+
 
 
 

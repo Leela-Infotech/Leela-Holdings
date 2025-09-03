@@ -31,6 +31,9 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 .shadow-bg-btn:hover{
     box-shadow: 2px 2px 55px;
 }
+.shadow-bg-btn-orange:hover{
+    box-shadow:#CE3B1B 2px 2px 55px;
+}
 .border-radius-50{
      border-radius: 50px;
 }

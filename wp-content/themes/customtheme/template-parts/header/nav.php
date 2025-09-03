@@ -27,7 +27,7 @@
         ));
       ?>
       <div class="btn">
-        <a href="#" class="bg_Orange shadow-bg-btn border-radius-50">Login/SignUp</a>
+        <a href="#" class="bg_Orange shadow-bg-btn-orange border-radius-50">Login/SignUp</a>
       </div>
     </div>
   </div>

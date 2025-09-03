@@ -25,9 +25,12 @@
   <!-- Swiper -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="/customtheme//images/images/banner.png" alt=""></div>
-      <div class="swiper-slide"><img src="/customtheme//images//images/banner2.png" alt=""></div>
+      <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/banner.png" alt="">
+</div>
+      <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/images/banner2.png" alt="">
+      </div>
     </div>
+
     <!-- <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div> -->
     <!-- <div class="swiper-pagination"></div> -->

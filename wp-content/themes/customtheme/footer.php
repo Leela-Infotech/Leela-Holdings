@@ -62,21 +62,22 @@ $socials = [
 echo '<div class="footer-logos d-flex flex-wrap align-items-center gap-3 justify-content-center">';
 
 foreach ($socials as $key => $social) {
-    $icon = get_footer_field($social['icon']);
-    $link = get_footer_field($social['url']);
+    $icon = get_footer_field($social['icon']); // image
+    $link = get_footer_field($social['url']);  // url
 
     if ($icon) {
+        // Handle image whether it's an array or URL
         $src = is_array($icon) ? ($icon['url'] ?? '') : $icon;
         $alt = is_array($icon) ? ($icon['alt'] ?? ucfirst($key).' icon') : ucfirst($key).' icon';
 
         if ($src) {
             $img = '<img src="' . esc_url($src) . '" alt="' . esc_attr($alt) . '" width="35" height="35">';
-            
-            // wrap image in <a> only if link exists
+
+            // ✅ Wrap with <a> if URL exists
             if ($link) {
                 echo '<a href="' . esc_url($link) . '" target="_blank" rel="noopener">' . $img . '</a>';
             } else {
-                echo $img;
+                echo $img; // just show image if no link
             }
         }
     }

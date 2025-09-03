@@ -50,42 +50,11 @@ $footer_images = [
                     <h5>Travel</h5>
 
   <div class="footer-logos d-flex flex-wrap align-items-center gap-3 justify-content-center">
-<?php
-$socials = [
-    'instagram' => 'instagram-icon',
-    'facebook'  => 'facebook-icon',
-    'twitter'   => 'twitter-icon',
-    'linkedin'  => 'linkedin-icon'
-];
 
-foreach ($socials as $network => $icon_field) {
-    $icon = lh_get_footer_setting($icon_field); 
-    $link = lh_get_footer_setting($network . '-link'); // ACF Link field returns array
-
-    if ($icon && $link) {
-        // If link is an array, extract URL
-        $link_url = is_array($link) && isset($link['url']) ? $link['url'] : $link;
-
-        // CASE 1: Font Awesome class (string)
-        if (is_string($icon) && strpos($icon, 'fa-') !== false) {
-            echo '<a href="' . esc_url($link_url) . '" target="_blank" rel="noopener">
-                    <i class="' . esc_attr($icon) . '"></i>
-                  </a>';
-
-        // CASE 2: Uploaded Image (ACF image array)
-        } elseif (is_array($icon) && isset($icon['url'])) {
-            echo '<a href="' . esc_url($link_url) . '" target="_blank" rel="noopener">
-                    <img src="' . esc_url($icon['url']) . '" alt="' . esc_attr($network) . '" style="width:24px; height:auto;" />
-                  </a>';
-
-        // CASE 3: Already full HTML
-        } else {
-            echo '<a href="' . esc_url($link_url) . '" target="_blank" rel="noopener">' . $icon . '</a>';
-        }
-    }
-}
+<?php 
+[acf field="{$field_name}"]
+<img src="<?php the_field('image_test'); ?>" alt="" />
 ?>
-
 
 
   </div>

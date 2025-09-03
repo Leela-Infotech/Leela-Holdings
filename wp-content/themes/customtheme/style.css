@@ -17,9 +17,6 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 .bg_Orange{
     background-color:#CE3B1B;
 }
-.bg_Orange:hover{
-    background-color:#c84f34;
-}
 .btn a{
     text-decoration: none;
     color: white;

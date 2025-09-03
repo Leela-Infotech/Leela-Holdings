@@ -45,14 +45,7 @@ add_action('init', 'custom_theme_footer_menus');
 
 
 
-// Footer logos called From ACF
-function lh_get_footer_setting( $field_name ) {
-    $page = get_page_by_path( 'footer-settings' ); // slug of the page
-    if ( $page ) {
-        return get_field( $field_name, $page->ID );
-    }
-    return false;
-}
+
 
 
 ?>

@@ -26,8 +26,8 @@
           'container'      => false,
         ));
       ?>
-      <div class="btn btn bg_Orange">
-        <a href="#">Login/SignUp</a>
+      <div class="btn">
+        <a href="#" class="bg_Orange">Login/SignUp</a>
       </div>
     </div>
   </div>

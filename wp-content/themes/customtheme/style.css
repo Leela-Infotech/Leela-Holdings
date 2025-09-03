@@ -29,8 +29,9 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
     padding: 10px 25px;
     border-radius: 50px;
 }
-.shadow-bg-btn{
+.shadow-bg-btn:hover{
     box-shadow: 2px 2px 55px;
+    border-radius: 12px;
 }
 
 

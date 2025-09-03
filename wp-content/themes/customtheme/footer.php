@@ -95,7 +95,7 @@ $footer_images = [
                             <h5>Contact Us</h5>
                         <?php echo do_shortcode('[wpzoom_social_icons id="70"]'); ?>
                         <div>
-                            <h6>Lotus lake Bhali</h6>
+                            <h6 class="text-start">Lotus lake Bhali</h6>
                             <p class="text-10 text-start">176206</p>
                             <p class="text-10 text-start">leelasonscorporation@gmail.com</p>
                         </div>

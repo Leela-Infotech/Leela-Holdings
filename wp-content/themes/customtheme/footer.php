@@ -48,7 +48,7 @@ $footer_images = [
                     <div class="row pt-4">
                         <div class="col-lg-2 col-md-6 mb-4">
                             <h5>Travel</h5>
-                            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.</p>
+                            <p class="text-10 text-start">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.</p>
                             <?php echo do_shortcode('[wpzoom_social_icons id="69"]'); ?>
                         </div>
                         <div class="col-lg-2 col-md-6 mb-4">
@@ -96,8 +96,8 @@ $footer_images = [
                         <?php echo do_shortcode('[wpzoom_social_icons id="70"]'); ?>
                         <div>
                             <h6>Lotus lake Bhali</h6>
-                            <p>176206</p>
-                            <p>leelasonscorporation@gmail.com</p>
+                            <p class="text-10 text-start">176206</p>
+                            <p class="text-10 text-start">leelasonscorporation@gmail.com</p>
                         </div>
                     </div>
                     </div>

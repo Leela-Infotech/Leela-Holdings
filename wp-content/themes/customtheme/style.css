@@ -114,3 +114,11 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
     box-shadow: 2px 2px 55px;
 }
 
+/* submenu */
+.sub-menu{
+    display: none;
+    list-style: none;
+}
+.sub-menu:hover{
+    display: block;
+}

@@ -69,9 +69,9 @@ foreach ($socials as $key => $social) {
         // Handle image whether it's an array or URL
         $src = is_array($icon) ? ($icon['url'] ?? '') : $icon;
         $alt = is_array($icon) ? ($icon['alt'] ?? ucfirst($key).' icon') : ucfirst($key).' icon';
-
+        $img = '<img src="' . esc_url($src) . '" alt="' . esc_attr($alt) . '" width="35" height="35">';
         if ($src) {
-            $img = '<img src="' . esc_url($src) . '" alt="' . esc_attr($alt) . '" width="35" height="35">';
+           echo '<a href="' . esc_url($link) .'" target="_blank">'. $img . '</a>';
 
             // ✅ Wrap with <a> if URL exists
             if ($link) {

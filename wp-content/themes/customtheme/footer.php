@@ -90,8 +90,10 @@ $footer_images = [
                             ));
                             ?>
                         </div>
-                        <div class="col-lg-2 col-md-6 mb-4">Contact Us</div>
+                        <div class="col-lg-2 col-md-6 mb-4">
+                            <h5>Contact Us</h5>
                         <?php echo do_shortcode('[wpzoom_social_icons id="70"]'); ?>
+                    </div>
                     </div>
                 </div>
 

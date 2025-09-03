@@ -93,6 +93,10 @@ $footer_images = [
                         <div class="col-lg-2 col-md-6 mb-4">
                             <h5>Contact Us</h5>
                         <?php echo do_shortcode('[wpzoom_social_icons id="70"]'); ?>
+                        <div>
+                            <h6>Lotus lake Bhali</h6>
+                            <p>176206</p>
+                        </div>
                     </div>
                     </div>
                 </div>

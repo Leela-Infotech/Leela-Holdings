@@ -51,6 +51,7 @@ $footer_images = [
 
   <div class="footer-logos d-flex flex-wrap align-items-center gap-3 justify-content-center">
 
+<p><?php footer_settings('facebook-icon'); ?></p>
 
 
   </div>

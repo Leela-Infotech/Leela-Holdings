@@ -54,11 +54,8 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
     text-decoration: none;
     color: #138913;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     padding: 10px 25px;
-}
-#navbarNav .navbar-nav .menu-item{
-   padding: 0px 25px;
 }
 
 #navbarNav .navbar-nav .menu-item a:hover{

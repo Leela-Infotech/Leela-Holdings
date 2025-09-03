@@ -28,38 +28,19 @@ function leelaHoldings_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'leelaHoldings_enqueue_scripts');
 
 
-// Footer Menus called
-function custom_theme_footer_menus(){
+
+
+
+// Main Menus
+
+function custom_theme_main_menu(){
     register_nav_menus(
-    array(
-            'footer-travel'      => __('Footer Travel'),
-            'footer-offices'     => __('Footer Offices'),
-            'footer-activities'  => __('Footer Activities'),
-            'footer-blogs'       => __('Footer Blogs'),
-            'footer-about'       => __('Footer About'),
-            'footer-contact'     => __('Footer Contact'),
+        array('main-menu'=> __('Main Menu'),
         )
     );
 }
-add_action('init', 'custom_theme_footer_menus');
+add_action('init', 'custom_theme_main_menu');
 
-
-// Get the Footer Settings page ID
-function get_footer_settings_id() {
-    $page = get_page_by_path('footer-settings'); // slug-based lookup
-    return $page ? (int) $page->ID : 43;
-}
-
-// Get a specific footer field (e.g., facebook-icon)
-function get_footer_field($field_name) {
-    // Avoid fatal if ACF is inactive
-    if ( ! function_exists('get_field') ) {
-        return null;
-    }
-
-    $footer_id = get_footer_settings_id();
-    return $footer_id ? get_field($field_name, $footer_id) : null;
-}
 
 
 

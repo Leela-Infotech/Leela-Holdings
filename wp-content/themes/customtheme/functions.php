@@ -45,6 +45,17 @@ add_action('init', 'custom_theme_footer_menus');
 
 
 
+// Get the Footer Settings page ID
+function get_footer_settings_id() {
+    $page = get_page_by_path('footer-settings');
+    return $page ? $page->43 : null;
+}
+
+// Get a specific footer field (e.g., facebook-icon)
+function get_footer_field($field_name) {
+    $footer_id = get_footer_settings_id();
+    return $footer_id ? get_field($field_name, $footer_id) : null;
+}
 
 
 

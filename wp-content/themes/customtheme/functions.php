@@ -44,18 +44,23 @@ function custom_theme_footer_menus(){
 add_action('init', 'custom_theme_footer_menus');
 
 
-
 // Get the Footer Settings page ID
 function get_footer_settings_id() {
-    $page = get_page_by_path('footer-settings');
-    return $page ? $page->43 : null;
+    $page = get_page_by_path('footer-settings'); // slug-based lookup
+    return $page ? (int) $page->ID : 43;
 }
 
 // Get a specific footer field (e.g., facebook-icon)
 function get_footer_field($field_name) {
+    // Avoid fatal if ACF is inactive
+    if ( ! function_exists('get_field') ) {
+        return null;
+    }
+
     $footer_id = get_footer_settings_id();
     return $footer_id ? get_field($field_name, $footer_id) : null;
 }
+
 
 
 

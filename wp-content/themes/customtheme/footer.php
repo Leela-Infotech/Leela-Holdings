@@ -59,17 +59,22 @@ $socials = [
     'twitter'   => ['icon' => 'twitter-icon', 'url' => 'twitter-link'],
 ];
 
-foreach ($socials as $social) {
+foreach ($socials as $key => $social) {
     $icon = get_footer_field($social['icon']);
     $link = get_footer_field($social['url']);
 
     if ($icon) {
-        echo '<a href="' . esc_url($link) . '" target="_blank" rel="noopener">
-                <img src="' . esc_url($icon['url']) . '" alt="' . esc_attr($icon['alt']) . '">
-              </a>';
+        $src = is_array($icon) ? ($icon['url'] ?? '') : $icon;
+        $alt = is_array($icon) ? ($icon['alt'] ?? ucfirst($key).' icon') : ucfirst($key).' icon';
+
+        if ($src) {
+            $img = '<img src="' . esc_url($src) . '" alt="' . esc_attr($alt) . '">';
+            echo $link ? '<a href="' . esc_url($link) . '" target="_blank" rel="noopener">'.$img.'</a>' : $img;
+        }
     }
 }
 ?>
+
 
 
 

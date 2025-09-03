@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
  * Footer Template
  */
@@ -19,126 +19,91 @@ $footer_images = [
 ?>
 
 <div class="h-100">
-<footer class="position-relative main-footer">
-  <div class="mail-box-container w-100 rounded text-center container position-absolute">
-        <div class="row">
-          <div class="col-lg-8 col-md-6 p-4 text-start">
-            <h5>SUBSCRIBE</h5>
-            <H5>NEWSLETTER</H5>
-            <div>
-              <h6>The Travel</h6>
-              <p>Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
-            </div>
+    <footer class="position-relative main-footer">
+        <div class="mail-box-container w-100 rounded text-center container position-absolute">
             <div class="row">
-              <div class="col-8"><input type="email" class="w-100" style="height:38px"></div>
-              <div class="col-4">
-                <button class="btn bg-black text-white">Subscribe</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-end justify-content-center">
-            <img src="<?php echo esc_url( $footer_images['mailbox']['src'] ); ?>"
-             alt="<?php echo esc_attr( $footer_images['mailbox']['alt'] ); ?>" class="img-fluid w-75 ">
-          </div>
-        </div>
-    </div>
-<footer class="bg-black text-white text-center pt-5">
-       <main class="d-flex flex-column mt-5">
-         <div class="container py-5">
-            <div class="row pt-4">
-                <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>Travel</h5>
-
-  <div class="footer-logos d-flex flex-wrap align-items-center gap-3 justify-content-center">
-
-<?php
-$socials = [
-    'facebook'  => ['icon' => 'facebook-icon', 'url' => 'facebook-link'],
-    'instagram' => ['icon' => 'instagram-icon', 'url' => 'instagram-link'],
-    'linkedin'  => ['icon' => 'linkedin-icon', 'url' => 'linkedin-link'],
-    'twitter'   => ['icon' => 'twitter-icon', 'url' => 'twitter-link'],
-];
-
-echo '<div class="footer-logos d-flex flex-wrap align-items-center gap-3 justify-content-center">';
-
-foreach ($socials as $key => $social) {
-    $icon = get_footer_field($social['icon']); // image
-    $link = get_footer_field($social['url']);  // url
-
-    if ($icon) {
-        // Handle image whether it's an array or URL
-        $src = is_array($icon) ? ($icon['url'] ?? '') : $icon;
-        $alt = is_array($icon) ? ($icon['alt'] ?? ucfirst($key).' icon') : ucfirst($key).' icon';
-        $img = '<img src="' . esc_url($src) . '" alt="' . esc_attr($alt) . '" width="35" height="35">';
-
-        if ($link) {
-           echo '<a href="' . esc_url($link) .'" target="_blank">'. $img . '</a>';
-         } else {
-                echo $img; // just show image if no link
-            }
-        }
-    }
-
-echo '</div>';
-?>
-
-
-
-
-
-  </div>
-
-                   
+                <div class="col-lg-8 col-md-6 p-4 text-start">
+                    <h5>SUBSCRIBE</h5>
+                    <H5>NEWSLETTER</H5>
+                    <div>
+                        <h6>The Travel</h6>
+                        <p>Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-8"><input type="email" class="w-100" style="height:38px"></div>
+                        <div class="col-4">
+                            <button class="btn bg-black text-white">Subscribe</button>
+                        </div>
+                    </div>
                 </div>
-                  <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>Our Offices</h5>
-                    <?php
-                     wp_nav_menu(array(
-          'theme_location' => 'footer-offices',
-          'menu_class'     => 'list-unstyled',
-          'container'      => false
-        ));
-                    ?>
+                <div class="col-lg-4 col-md-6 d-flex align-items-end justify-content-center">
+                    <img src="<?php echo esc_url($footer_images['mailbox']['src']); ?>"
+                        alt="<?php echo esc_attr($footer_images['mailbox']['alt']); ?>" class="img-fluid w-75 ">
                 </div>
-                  <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>Our Activities</h5>
-                    <?php
-                   wp_nav_menu(array(
-          'theme_location' => 'footer-activities',
-          'menu_class'     => 'list-unstyled',
-          'container'      => false
-        ));
-                    ?>
-                </div>
-                 <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>Travel Blogs</h5>
-                    <?php
-                    wp_nav_menu(array(
-          'theme_location' => 'footer-blogs',
-          'menu_class'     => 'list-unstyled',
-          'container'      => false
-        ));
-                    ?>
-                </div>
-                 <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>About Us</h5>
-                    <?php
-                     wp_nav_menu(array(
-          'theme_location' => 'footer-about',
-          'menu_class'     => 'list-unstyled',
-          'container'      => false
-        ));
-                    ?>
-                </div>
-                <div class="col-lg-2 col-md-6 mb-4">Contact Us</div>
             </div>
         </div>
-      
-        <div class="bg-secondary text-center p-2">© 2025 Leela Infotech | Built by Atul Chambyal</div>
-         </main>
+        <footer class="bg-black text-white text-center pt-5">
+            <main class="d-flex flex-column mt-5">
+                <div class="container py-5">
+                    <div class="row pt-4">
+                        <div class="col-lg-2 col-md-6 mb-4">
+                            <h5>Travel</h5>
+                            <div class="footer-logos d-flex flex-wrap align-items-center gap-3 justify-content-center">
+                                <a href="#"> <img src="<?php echo esc_url($footer_images['']['src']); ?>"> </a>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-2 col-md-6 mb-4">
+                            <h5>Our Offices</h5>
+                            <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer-offices',
+                                'menu_class' => 'list-unstyled',
+                                'container' => false
+                            ));
+                            ?>
+                        </div>
+                        <div class="col-lg-2 col-md-6 mb-4">
+                            <h5>Our Activities</h5>
+                            <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer-activities',
+                                'menu_class' => 'list-unstyled',
+                                'container' => false
+                            ));
+                            ?>
+                        </div>
+                        <div class="col-lg-2 col-md-6 mb-4">
+                            <h5>Travel Blogs</h5>
+                            <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer-blogs',
+                                'menu_class' => 'list-unstyled',
+                                'container' => false
+                            ));
+                            ?>
+                        </div>
+                        <div class="col-lg-2 col-md-6 mb-4">
+                            <h5>About Us</h5>
+                            <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer-about',
+                                'menu_class' => 'list-unstyled',
+                                'container' => false
+                            ));
+                            ?>
+                        </div>
+                        <div class="col-lg-2 col-md-6 mb-4">Contact Us</div>
+                    </div>
+                </div>
+
+                <div class="bg-secondary text-center p-2">© 2025 Leela Infotech | Built by Atul Chambyal</div>
+            </main>
+        </footer>
     </footer>
- </footer>
- </div>
+</div>
 <?php wp_footer(); ?>
-    </body>
+</body>
+
 </html>

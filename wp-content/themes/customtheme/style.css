@@ -53,11 +53,15 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 #navbarNav .navbar-nav .menu-item a{
     text-decoration: none;
     color: green;
-    font-weight: bold;
-    font-size: 32px;
+    font-weight: 500;
+    font-size: 24px;
     padding: 10px 25px;
 }
-#navbarNav .navbar-nav .menu-item a{
+#navbarNav .navbar-nav .menu-item{
+   padding: 0px 25px;
+}
+
+#navbarNav .navbar-nav .menu-item a:hover{
     border-radius: 50px;
     background-color: white;
 }

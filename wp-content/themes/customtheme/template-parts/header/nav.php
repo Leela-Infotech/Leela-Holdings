@@ -7,22 +7,28 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container">
-  <div class="row w-100">
-    <div class="col-lg-6 d-flex justify-content-between">
-    <a class="navbar-brand" href="#"><img src="/wp-content/uploads/2025/09/logo.png" width="100px" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">
+      <img src="/wp-content/uploads/2025/09/logo.png" width="100px" alt="">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-</div>
-<div class="col-lg-6 d-lg-flex justify-content-end d-none" id="navbarNav">
-     <?php
-                            wp_nav_menu(array(
-                                'theme_location' => 'main-menu',
-                                'menu_class' => 'list-unstyled',
-                                'container' => false
-                            ));
-                            ?>
-</div>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <?php
+        wp_nav_menu(array(
+          'theme_location' => 'main-menu',
+          'menu_class'     => 'navbar-nav ms-auto', // Bootstrap styling
+          'container'      => false,
+          'walker'         => new WP_Bootstrap_Navwalker() // optional if you want dropdowns
+        ));
+      ?>
+    </div>
+  </div>
+</nav>
+
     <!-- For Desktop 
     <div class="col-lg-6 d-lg-flex justify-content-end d-none" id="navbarNav">
       <ul class="navbar-nav">
@@ -58,6 +64,3 @@
         </li>
       </ul>
 </div> -->
-    </div>
-  </div>
-</nav>

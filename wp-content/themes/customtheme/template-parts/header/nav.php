@@ -28,7 +28,7 @@
       ?>
       <div class="btn">
     <div class="bg_Orange shadow-bg-btn-orange border-radius-50 py-2 px-3">
-  <?php echo do_shortcode('[xoo_el_pop text="{pop}Login/Signup{/pop}" type="login" change_to_text="{logout}{firstname}{/logout} {firstname}"]'); ?>
+  <?php echo do_shortcode('[xoo_el_pop text="{pop}Login/Signup{/pop}" type="login" change_to_text="{logout}{firstname}{/logout}"]'); ?>
 </div>
  </div>
     </div>

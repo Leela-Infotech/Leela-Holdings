@@ -27,7 +27,7 @@
         ));
       ?>
       <div class="btn">
-    <?php echo do_shortcode('[xoo_el_pop text="{pop}Login/Signup{/pop}" type="login" change_to_text="{logout}Logout/signout{/logout} {firstname}" class="bg_Orange shadow-bg-btn-orange border-radius-50"]'); ?>  
+    <?php echo do_shortcode('[xoo_el_pop text="{pop}Login/Signup{/pop}" type="login" change_to_text="{logout}Logout/signout{/logout} {firstname}"]'); ?>  
     </div>
     </div>
   </div>

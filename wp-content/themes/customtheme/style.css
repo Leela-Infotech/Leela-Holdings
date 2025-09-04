@@ -66,6 +66,7 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 }
 .list-unstyled li{
     padding-bottom:12px;
+    list-style: none;
 }
 .list-unstyled li a{
     color: #B2B2B2;

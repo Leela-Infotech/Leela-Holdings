@@ -32,10 +32,14 @@ add_action( 'wp_enqueue_scripts', 'leelaHoldings_enqueue_scripts');
 
 
 // Main Menus
-
 function custom_theme_main_menu(){
     register_nav_menus(
-        array('main-menu'=> __('Main Menu'),
+        array(
+            'main-menu'=> __('Main Menu'),
+            'footer-offices'=> __('Footer Office'),
+            'footer-activities'=>__('Footer Activities'),
+            'footer-blogs'=>__('Footer Blogs'),
+            'footer-about'=>__('Footer About'),
         )
     );
 }

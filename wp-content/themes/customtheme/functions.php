@@ -93,6 +93,13 @@ function mytheme_enqueue_swiper_assets() {
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_swiper_assets');
 
 
+// Hide admin bar only for subscribers
+function hide_admin_bar_for_subscribers() {
+    if (current_user_can('subscriber')) {
+        show_admin_bar(false);
+    }
+}
+add_action('after_setup_theme', 'hide_admin_bar_for_subscribers');
 
 
 

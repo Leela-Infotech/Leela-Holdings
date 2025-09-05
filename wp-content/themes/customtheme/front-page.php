@@ -8,7 +8,8 @@ get_header();
 ?>
 
 <div class="content p-5">
-    Front-page
+    <?php echo do_shortcode('[elementor-template id="244"]'); ?>
+
 </div>
 
 

@@ -18,7 +18,6 @@ get_header();
         endwhile;
     endif;
     ?>
-    ?>
 </main>
 
 <?php

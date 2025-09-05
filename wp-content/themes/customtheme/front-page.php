@@ -6,12 +6,9 @@
  */
 get_header();
 ?>
-
-<div class="content p-5">
+<main id="main" class="site-main">
     <?php echo do_shortcode('[elementor-template id="244"]'); ?>
-
-</div>
-
+</main>
 
 <?php
 get_footer();

@@ -78,6 +78,9 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
 .footer-logos .footer-logo-img{
     max-width: 40px !important;
 }
+.main-footer{
+    margin-top: 0px;
+}
 .main-footer .footer-container{
     padding-top: 125px;
 }

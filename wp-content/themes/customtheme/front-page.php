@@ -7,7 +7,9 @@
 get_header();
 ?>
 <main id="main" class="site-main">
-    <?php echo do_shortcode('[elementor-template id="244"]'); ?>
+    <?php
+      echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display(244);
+    ?>
 </main>
 
 <?php

@@ -6,8 +6,9 @@
  */
 get_header();
 ?>
-<main id="main" class="site-main">
+<main id="main" class="site-main container">
     <?php
+      echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display(188);
       echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display(244);
       echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display(228);
       echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display(222);

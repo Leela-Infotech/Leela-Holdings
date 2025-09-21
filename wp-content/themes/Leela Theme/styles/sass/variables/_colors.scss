@@ -1,0 +1,84 @@
+@use "sass:color";
+
+
+// ==============================
+// Leela Infotech - Elegant Tech Blue Gradient Palette
+// ==============================
+
+// ------------------------------
+// Primary Gradient
+// ------------------------------
+$primary-gradient-start: #024b3e;
+$primary-gradient-end: #5df4ed;  
+$hero-bg-gradient: linear-gradient(135deg, $primary-gradient-start, $primary-gradient-end);
+$hero-text-color: #FFFFFF;
+$tech-blue: #0d47a1; // deep tech blue
+$white: #ffffff;
+$transparent: transparent;
+
+
+// ------------------------------
+// Secondary Accent / Buttons
+// ------------------------------
+$accent-color: #FFC107;  // warm amber
+$btn-primary-bg: $accent-color;
+$btn-primary-color: #212121; // dark text
+$btn-hover-bg: color.adjust($btn-primary-bg, $lightness: -10%);
+
+
+// ------------------------------
+// Body & Footer
+// ------------------------------
+$background-light: #F5F5F5;   // neutral light gray
+$light-dark:#333;
+$background-dark: #1A1A1A;    // almost black
+$footer-bg: $background-dark;
+$footer-text: #FFFFFF;
+$text-dark: #212121;
+$text-light: #FFFFFF;
+$text-accent: $accent-color;
+
+// ------------------------------
+// Links & Hover
+// ------------------------------
+$link-color: $primary-gradient-end;
+$link-hover-color: color.adjust($primary-gradient-end, $lightness: 10%);
+$neon: #10c9c3;  // accent hover color
+
+// ------------------------------
+// Optional / Utility Colors
+// ------------------------------
+$success: #28a745;
+$error: #dc3545;
+$info: #17a2b8;
+$warning: #ffc107;
+
+// ------------------------------
+// Grays / Borders
+// ------------------------------
+$white: #FFFFFF;
+$gray-50: #f9f9f9;
+$gray-100: #f0f0f0;
+$gray-200: #e0e0e0;
+$gray-300: #d9d9d9;
+$gray-400: #c0c0c0;
+$gray-500: #a0a0a0;
+$gray-600: #888888;
+$gray-700: #666666;
+$gray-800: #444444;
+$gray-900: #222222;
+$black: #000000;
+$bg-white-blue: #e3edf7; // for social icon backgrounds
+$border-primary: $primary-gradient-end;
+$border-secondary: $text-dark;
+$border-light: $gray-200;
+$border-dark: $gray-800;
+
+// ------------------------------
+// Social Media Colors
+// ------------------------------
+$facebook: #3b5998;
+$twitter: #00acee;
+$linkedin: #0a66c2;
+$github: #161b22;
+$youtube: #ff0000;

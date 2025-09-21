@@ -1,0 +1,131 @@
+// ==============================
+// Custom Sliding Menu for Bootstrap Nav
+// ==============================
+
+// Import necessary variables
+@use "colors" as *;
+@use "spacing" as *;
+@use "fonts" as *;
+@use "transition" as *;
+@use "zindex" as *;
+
+
+//Menu start
+.navbar-nav .menu-item{
+    list-style: none;
+    padding: $space-md $space-lg;
+    position: relative;
+    a{
+        text-decoration-line: none;
+        color:$black;
+
+         &:hover{
+        color:$neon;
+    }
+    }
+   
+}
+.footer-menu .menu-item{
+  list-style: none;
+    padding: $space-xs;
+    a{
+        text-decoration-line: none;
+        color:$white;
+
+         &:hover{
+        color:$neon;
+    }
+    }
+   
+}
+// Submenu start
+.sub-menu{
+    display: none;
+
+    .menu-item{
+        padding: 5px;
+
+    &:hover{
+        background-color: $white;
+
+       a {
+            color: $black !important;
+        }
+    }
+}
+}
+.menu-item:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: $primary-gradient-start;
+    z-index: 223;
+    padding: 0px ;
+    text-align: start;
+    width: max-content;
+    
+
+    .menu-item{
+        a{
+    color: $white;
+        }
+    }
+}
+// Submenu end
+//Menu end
+
+//footer social icons start
+.social-media {
+  display: flex;
+  justify-content: center;
+  
+  a {
+  display: flex;
+  background: $bg-white-blue;
+  height: 40px;
+  width: 40px;
+  margin: 0 15px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: transform 0.5s;
+
+    i {
+  font-size: 18px;
+  color: $gray-500;
+  transition: transform 0.5s;
+    }
+    &:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.01);
+  transform: translateY(2px);
+    }
+    &:hover i {
+    transform: scale(0.9);
+    }
+    &:hover .fa-facebook {
+    color: $facebook;
+    }
+    &:hover .fa-twitter {
+    color: $twitter;
+    }
+    &:hover .fa-linkedin {
+    color: $linkedin;
+    }
+    &:hover .fa-github {
+    color: $github;
+    }
+    &:hover .fa-youtube {
+    color: $youtube;
+    }
+}
+}
+
+// footer social icons end 
+

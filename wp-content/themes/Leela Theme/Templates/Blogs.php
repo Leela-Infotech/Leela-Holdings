@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Contact Page
+ * Template Name: Blog Template
  * @package Leela Infotech
  */
 

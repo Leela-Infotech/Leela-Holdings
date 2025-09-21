@@ -3,94 +3,162 @@
 // Place this in your theme and include it in front-page or home template via get_template_part()
 
 // Replace these with dynamic calls if you store them in ACF/options page
-$about_title = "Leela Holdings — Building Businesses That Last";
-$about_text  = "Leela Holdings is a diversified group that builds and operates businesses across technology, education, fashion, retail, and logistics. We partner with entrepreneurs, investors, and customers to deliver practical, scalable solutions that drive growth, trust and long-term value.";
-$mission = "To create long-term value by building strong, customer-focused businesses across sectors.";
-$vision  = "To be the leading diversified group known for innovation, integrity, and measurable impact.";
-
-// metrics (replace numbers)
-$metrics = [
-  ['num' => 5,   'label' => 'Active brands'],
-  ['num' => 10,  'label' => 'Years (combined)'],
-  ['num' => 500, 'label' => 'Projects delivered'],
-  ['num' => 8,   'label' => 'Cities']
-];
-
-// example news (replace with WP loop if required)
-$news = [
-  ['title'=>'Wear: new seasonal collection','excerpt'=>'Leela Wear launches a curated seasonal line focused on comfort and sustainability.','link'=>'#'],
-  ['title'=>'Infotech expands team','excerpt'=>'Leela Infotech strengthens its engineering team to accelerate product delivery.','link'=>'#'],
-  ['title'=>'Tests: new mock series','excerpt'=>'New comprehensive mock test series to help aspirants prepare better.','link'=>'#']
-];
 ?>
-<section id="leela-about" class="leela-about">
+<section id="about-leela" class="content-section py-5 bg-light">
   <div class="container">
-    <div class="about-grid">
-      <div class="about-text">
-        <h2><?php echo esc_html($about_title); ?></h2>
-        <p><?php echo esc_html($about_text); ?></p>
-        <div class="mission-vision">
-          <div><h4>Mission</h4><p><?php echo esc_html($mission); ?></p></div>
-          <div><h4>Vision</h4><p><?php echo esc_html($vision); ?></p></div>
+    <!-- About -->
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6">
+        <h2 class="section-title mb-3">Leela Holdings — Building Businesses That Last</h2>
+        <p class="lead">
+          Leela Holdings is a diversified group that builds and operates businesses across technology, education,
+          fashion, retail, and logistics. We partner with entrepreneurs, investors, and customers to deliver practical,
+          scalable solutions that drive growth, trust and long-term value.
+        </p>
+        <div class="mt-4">
+          <h5 class="fw-bold">Mission</h5>
+          <p>To create long-term value by building strong, customer-focused businesses across sectors.</p>
+          <h5 class="fw-bold mt-3">Vision</h5>
+          <p>To be the leading diversified group known for innovation, integrity, and measurable impact.</p>
         </div>
       </div>
-      <div class="about-visual">
-        <!-- Replace with an SVG or abstract image -->
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/leela-holdings-graphic.jpg" alt="Leela Holdings" />
+      <div class="col-lg-6 text-center">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/leela-holdings-graphic.jpg"
+             class="img-fluid rounded shadow"
+             alt="Leela Holdings overview">
       </div>
     </div>
 
     <!-- Values -->
-    <div class="values row">
-      <div class="value"><h5>Innovation</h5><p>We pursue new ideas with disciplined execution.</p></div>
-      <div class="value"><h5>Customer-first</h5><p>Solutions built around real human needs.</p></div>
-      <div class="value"><h5>Reliability</h5><p>We deliver on promises — on time, every time.</p></div>
-      <div class="value"><h5>Sustainable Growth</h5><p>Profitable growth that benefits customers and communities.</p></div>
-    </div>
-
-    <!-- Metrics -->
-    <div class="metrics row">
-      <?php foreach($metrics as $m): ?>
-        <div class="metric">
-          <div class="metric-number" data-target="<?php echo esc_attr($m['num']); ?>">0</div>
-          <div class="metric-label"><?php echo esc_html($m['label']); ?></div>
+    <div class="row text-center mb-5">
+      <h3 class="section-subtitle mb-4">Our Core Values</h3>
+      <div class="col-md-3 mb-4">
+        <div class="value-card p-4 h-100 shadow-sm rounded">
+          <i class="bi bi-lightbulb display-5 text-primary mb-3"></i>
+          <h5 class="fw-bold">Innovation</h5>
+          <p class="small">We pursue new ideas with disciplined execution.</p>
         </div>
-      <?php endforeach; ?>
-    </div>
-
-    <!-- News -->
-    <div class="news">
-      <h3>Latest updates</h3>
-      <div class="news-grid">
-        <?php foreach($news as $n): ?>
-          <article class="news-card">
-            <h4><?php echo esc_html($n['title']); ?></h4>
-            <p><?php echo esc_html($n['excerpt']); ?></p>
-            <a href="<?php echo esc_url($n['link']); ?>" class="btn-link">Read more</a>
-          </article>
-        <?php endforeach; ?>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="value-card p-4 h-100 shadow-sm rounded">
+          <i class="bi bi-people display-5 text-success mb-3"></i>
+          <h5 class="fw-bold">Customer-first</h5>
+          <p class="small">Solutions built around real human needs.</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="value-card p-4 h-100 shadow-sm rounded">
+          <i class="bi bi-shield-check display-5 text-danger mb-3"></i>
+          <h5 class="fw-bold">Reliability</h5>
+          <p class="small">We deliver on promises — on time, every time.</p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="value-card p-4 h-100 shadow-sm rounded">
+          <i class="bi bi-graph-up-arrow display-5 text-warning mb-3"></i>
+          <h5 class="fw-bold">Sustainable Growth</h5>
+          <p class="small">Profitable growth that benefits customers and communities.</p>
+        </div>
       </div>
     </div>
 
-    <!-- CTA -->
-    <div class="group-cta">
+    <!-- Metrics -->
+    <div class="row text-center mb-5">
+      <div class="col-md-3">
+        <div class="metric">
+          <h2 class="counter fw-bold text-primary" data-target="5">0</h2>
+          <p class="mb-0">Active Brands</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="metric">
+          <h2 class="counter fw-bold text-success" data-target="10">0</h2>
+          <p class="mb-0">Years of Experience</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="metric">
+          <h2 class="counter fw-bold text-danger" data-target="500">0</h2>
+          <p class="mb-0">Projects Delivered</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="metric">
+          <h2 class="counter fw-bold text-warning" data-target="8">0</h2>
+          <p class="mb-0">Cities of Operation</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- News -->
+    <div class="news mb-5">
+      <h3 class="section-subtitle text-center mb-4">Latest Updates</h3>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title">Leela Wear launches new seasonal collection</h5>
+              <p class="card-text small">Curated seasonal line focused on comfort and sustainability.</p>
+              <a href="#" class="stretched-link">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title">Leela Infotech expands team</h5>
+              <p class="card-text small">Strengthening our engineering team to accelerate delivery.</p>
+              <a href="#" class="stretched-link">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="card-title">Leela Tests: new mock series</h5>
+              <p class="card-text small">Comprehensive test series to help aspirants prepare better.</p>
+              <a href="#" class="stretched-link">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Partnership CTA -->
+    <div class="cta-box text-center bg-white p-5 shadow rounded">
       <h3>Looking to partner with Leela Holdings?</h3>
-      <p>For partnerships, investor relations or careers — tell us about your interest.</p>
-      <form id="group-contact" class="group-contact" method="post" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
+      <p class="mb-4">For partnerships, investor relations or careers — tell us about your interest.</p>
+      <form class="row g-3 justify-content-center" method="post" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
         <input type="hidden" name="action" value="leelah_group_contact">
-        <input name="name" placeholder="Full name" required>
-        <input name="email" type="email" placeholder="Email" required>
-        <input name="phone" placeholder="Phone">
-        <input name="organization" placeholder="Organization">
-        <select name="inquiry_type">
-          <option value="partner">Partner</option>
-          <option value="investor">Investor</option>
-          <option value="careers">Careers</option>
-          <option value="press">Press</option>
-        </select>
-        <textarea name="message" placeholder="Tell us briefly"></textarea>
-        <button type="submit" class="btn-primary">Submit</button>
+        <div class="col-md-5">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col-md-5">
+          <input type="email" name="email" class="form-control" placeholder="Email" required>
+        </div>
+        <div class="col-md-5">
+          <input type="text" name="phone" class="form-control" placeholder="Phone">
+        </div>
+        <div class="col-md-5">
+          <input type="text" name="organization" class="form-control" placeholder="Organization">
+        </div>
+        <div class="col-md-10">
+          <select name="inquiry_type" class="form-select">
+            <option value="">Select Inquiry Type</option>
+            <option value="partner">Partner</option>
+            <option value="investor">Investor</option>
+            <option value="careers">Careers</option>
+            <option value="press">Press</option>
+          </select>
+        </div>
+        <div class="col-md-10">
+          <textarea name="message" rows="4" class="form-control" placeholder="Your Message"></textarea>
+        </div>
+        <div class="col-md-10">
+          <button type="submit" class="btn btn-primary px-4">Submit</button>
+        </div>
       </form>
     </div>
   </div>
 </section>
+

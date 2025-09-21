@@ -13,6 +13,15 @@ $images = [
         "url" => get_template_directory_uri() . "/images/banner/tests.jpg",
         "alt" => "Second Image",
         "class" => "my-img h-100",
+        "title" => "Empowering Businesses Across Sectors",
+        "description" => "From technology to fashion, logistics to retail, Leela Holdings drives growth with innovation and trust.",
+        "button" => "Explore Our Brands",
+        "button_link" => "https://tests.leelaholdings.in"
+    ],
+      [
+        "url" => get_template_directory_uri() . "/images/banner/tests.jpg",
+        "alt" => "Second Image",
+        "class" => "my-img h-100",
         "title" => "Leela Tests",
         "description" => "Prepare smarter, succeed faster.",
         "button" => "link to Tests site",

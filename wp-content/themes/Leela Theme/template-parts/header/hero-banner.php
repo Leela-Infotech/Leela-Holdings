@@ -10,7 +10,7 @@ $base_url = "https://infotech.leelaholdings.in";
 // Image paths (relative to root)
 $images = [
       [
-        "url" => "/images/banner/tests.jpg",
+        "url" => get_template_directory_uri() . "/images/banner/tests.jpg",
         "alt" => "Second Image",
         "class" => "my-img h-100",
         "title" => "Leela Tests",
@@ -19,7 +19,7 @@ $images = [
         "button_link" => "https://tests.leelaholdings.in"
     ],
     [
-        "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
+        "url" => "https://infotech.leelaholdings.in/wp-content/uploads/2025/09/workers-scaled.jpg",
         "alt" => "First Image",
         "class" => "my-img h-100",
         "title" => "Leela Infotech",
@@ -29,7 +29,7 @@ $images = [
 
     ],
     [
-        "url" => "/images/banner/wear.jpg",
+        "url" => get_template_directory_uri() . "/images/banner/wear.jpg",
         "alt" => "Third Image",
         "class" => "my-img h-100",
         "title" => "Leela Wear",
@@ -38,7 +38,7 @@ $images = [
         "button_link" => "https://wear.leelaholdings.in"
     ],
        [
-        "url" => "/images/banner/transport.jpg",
+        "url" => get_template_directory_uri() . "/images/banner/transport.jpg",
         "alt" => "Fourth Image",
         "class" => "my-img h-100",
         "title" => "Leela Transport",
@@ -47,8 +47,8 @@ $images = [
         "button_link" => "https://transport.leelaholdings.in"
        ],
           [
-        "url" => "/images/banner/retail.jpg",
-        "alt" => "Fifth Image",
+        "url" => get_template_directory_uri() . "/images/banner/retail.jpg",
+        "alt" => "Fifth Image", 
         "class" => "my-img h-100",
         "title" => "Leela Retail",
         "description" => "Shop your essentials with ease",
@@ -65,7 +65,7 @@ $images = [
 
             <?php foreach ($images as $img): ?>
                 <swiper-slide>
-                    <img src="<?php echo $base_url . $img["url"]; ?>" alt="<?php echo $img["alt"]; ?>"
+                    <img src="<?php echo $img["url"]; ?>" alt="<?php echo $img["alt"]; ?>"
                         class="<?php echo $img["class"]; ?>" style="width:100%; height:auto;">
 
                     <div class="position-absolute w-100 h-100 bg-diagonal-tech d-flex text-start align-items-center">

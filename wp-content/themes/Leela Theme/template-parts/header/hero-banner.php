@@ -10,7 +10,7 @@ $base_url = "https://infotech.leelaholdings.in";
 // Image paths (relative to root)
 $images = [
       [
-        "url" => "/images/banner/tests.jpg",
+        "url" => get_template_directory_uri() . "/images/banner/tests.jpg",
         "alt" => "Second Image",
         "class" => "my-img h-100",
         "title" => "Leela Tests",
@@ -29,7 +29,7 @@ $images = [
 
     ],
     [
-        "url" => "/images/banner/wear.jpg",
+        "url" => get_template_directory_uri() . "/images/banner/wear.jpg",
         "alt" => "Third Image",
         "class" => "my-img h-100",
         "title" => "Leela Wear",
@@ -38,7 +38,7 @@ $images = [
         "button_link" => "https://wear.leelaholdings.in"
     ],
        [
-        "url" => "/images/banner/transport.jpg",
+        "url" => get_template_directory_uri() . "/images/banner/transport.jpg",
         "alt" => "Fourth Image",
         "class" => "my-img h-100",
         "title" => "Leela Transport",
@@ -47,7 +47,7 @@ $images = [
         "button_link" => "https://transport.leelaholdings.in"
        ],
           [
-        "url" => "/images/banner/retail.jpg",
+        "url" => get_template_directory_uri() . "/images/banner/retail.jpg",
         "alt" => "Fifth Image",
         "class" => "my-img h-100",
         "title" => "Leela Retail",

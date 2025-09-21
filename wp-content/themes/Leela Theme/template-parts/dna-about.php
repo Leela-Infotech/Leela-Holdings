@@ -28,7 +28,10 @@
              alt="Leela Holdings overview">
       </div>
     </div>
-
+    </div>
+</section>
+<section class="services-container p-lg-5 p-2">
+  <div class="container">
     <!-- Values -->
     <div class="row text-center mb-5">
       <h3 class="section-subtitle mb-4">Our Core Values</h3>

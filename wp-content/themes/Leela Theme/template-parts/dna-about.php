@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="col-lg-6 text-center">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/leela-holdings-graphic.jpg"
+        <img src="https://leelaholdings.in/wp-content/uploads/2025/09/Frame-1-scaled.png"
              class="img-fluid rounded shadow"
              alt="Leela Holdings overview">
       </div>

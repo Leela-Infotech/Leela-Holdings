@@ -19,7 +19,7 @@ $images = [
         "button_link" => "https://tests.leelaholdings.in"
     ],
     [
-        "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
+        "url" => "https://infotech.leelaholdings.in/wp-content/uploads/2025/09/workers-scaled.jpg",
         "alt" => "First Image",
         "class" => "my-img h-100",
         "title" => "Leela Infotech",
@@ -48,7 +48,7 @@ $images = [
        ],
           [
         "url" => get_template_directory_uri() . "/images/banner/retail.jpg",
-        "alt" => "Fifth Image",
+        "alt" => "Fifth Image", 
         "class" => "my-img h-100",
         "title" => "Leela Retail",
         "description" => "Shop your essentials with ease",
@@ -65,7 +65,7 @@ $images = [
 
             <?php foreach ($images as $img): ?>
                 <swiper-slide>
-                    <img src="<?php echo $base_url . $img["url"]; ?>" alt="<?php echo $img["alt"]; ?>"
+                    <img src="<?php echo $img["url"]; ?>" alt="<?php echo $img["alt"]; ?>"
                         class="<?php echo $img["class"]; ?>" style="width:100%; height:auto;">
 
                     <div class="position-absolute w-100 h-100 bg-diagonal-tech d-flex text-start align-items-center">

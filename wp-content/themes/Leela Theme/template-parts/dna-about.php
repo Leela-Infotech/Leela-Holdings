@@ -122,43 +122,7 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Partnership CTA -->
-    <div class="cta-box text-center bg-white p-5 shadow rounded">
-      <h3>Looking to partner with Leela Holdings?</h3>
-      <p class="mb-4">For partnerships, investor relations or careers — tell us about your interest.</p>
-      <form class="row g-3 justify-content-center" method="post" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
-        <input type="hidden" name="action" value="leelah_group_contact">
-        <div class="col-md-5">
-          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-        </div>
-        <div class="col-md-5">
-          <input type="email" name="email" class="form-control" placeholder="Email" required>
-        </div>
-        <div class="col-md-5">
-          <input type="text" name="phone" class="form-control" placeholder="Phone">
-        </div>
-        <div class="col-md-5">
-          <input type="text" name="organization" class="form-control" placeholder="Organization">
-        </div>
-        <div class="col-md-10">
-          <select name="inquiry_type" class="form-select">
-            <option value="">Select Inquiry Type</option>
-            <option value="partner">Partner</option>
-            <option value="investor">Investor</option>
-            <option value="careers">Careers</option>
-            <option value="press">Press</option>
-          </select>
-        </div>
-        <div class="col-md-10">
-          <textarea name="message" rows="4" class="form-control" placeholder="Your Message"></textarea>
-        </div>
-        <div class="col-md-10">
-          <button type="submit" class="btn btn-primary px-4">Submit</button>
-        </div>
-      </form>
-    </div>
+</div>
   </div>
 </section>
 

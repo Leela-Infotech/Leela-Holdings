@@ -1,0 +1,62 @@
+# =======================================
+# WordPress Core & Config
+# =======================================
+wp-config.php
+wp-config-*.php
+
+# Don’t commit WordPress core files if using as a dependency
+wp-admin/
+wp-includes/
+
+# =======================================
+# Uploads & User Content
+# =======================================
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backups/
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/object-cache.php
+*.sql
+*.tar
+*.zip
+
+# =======================================
+# Plugins & Themes (optional)
+# =======================================
+# If you only want to track your custom theme/plugin, ignore others:
+wp-content/plugins/*
+!wp-content/plugins/my-custom-plugin/
+
+wp-content/themes/*
+!wp-content/themes/my-custom-theme/
+
+# =======================================
+# PHP / Logs
+# =======================================
+*.log
+*.err
+*.sql
+*.sqlite
+error_log
+debug.log
+
+# =======================================
+# OS / Editors
+# =======================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# =======================================
+# Environment / Build Files
+# =======================================
+.env
+vendor/
+node_modules/
+dist/
+build/

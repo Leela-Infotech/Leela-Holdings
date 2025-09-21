@@ -1,0 +1,174 @@
+// main.scss
+// main.scss
+
+// Colors & backgrounds
+@use "variables/colors" as *;
+
+// Fonts & typography
+@use "variables/fonts" as *;
+
+// Spacing
+@use "variables/spacing" as *;
+
+// Borders
+@use "variables/borders" as *;
+
+// Shadows
+@use "variables/shadow" as *;
+ 
+// Transitions
+@use "variables/transition" as *;
+
+// Z-index
+@use "variables/zindex" as *;
+
+@use "variables/menu";
+@use "variables/swiper";
+@use "variables/cards";
+@use "variables/_loader";
+@use "variables/accordion.scss";
+
+
+.entry-content{
+  max-width: 1210px;
+}
+
+.footer-menu .page_item{
+list-style: none;
+    a{
+    text-decoration-line: none;
+    color:$white;
+}
+}
+
+
+
+.header-background{
+  height: 500px !important;
+}
+
+  @media only screen and (max-width:990px){
+.small-height{
+  max-height: 220px !important;
+
+
+  .h1{
+    font-weight: 4em;
+  }
+  }
+}
+
+
+// Main color related to theme
+.hero {
+  background: $hero-bg-gradient;
+  color: $hero-text-color;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.btn-primary {
+  background: $btn-primary-bg;
+  color: $btn-primary-color;
+  text-decoration: none;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: $btn-hover-bg;
+  }
+}
+
+body {
+  background: $background-light;
+  color: $text-dark;
+}
+
+footer {
+  background: $footer-bg;
+  color: $footer-text;
+}
+.bg-diagonal-tech {
+  background: linear-gradient(45deg, $primary-gradient-start, $transparent);
+}
+
+
+// blogs home.php design start 
+.blog-page {
+    .shadow-sm:hover {
+      box-shadow: 2px 3px 15px rgba(0,0,0,0.1);
+    }
+  .card {
+    border-radius: 0.5rem;
+    transition: box-shadow 0.3s ease;
+    
+    .card-title {
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .card-text {
+      color: #555;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    
+    .page-numbers {
+      margin: 0 0.25rem;
+      padding: 0.5rem 0.75rem;
+      border: 1px solid #ddd;
+      border-radius: 0.25rem;
+      text-decoration: none;
+      color: #333;
+
+      &.current {
+        background: #007bff;
+        color: #fff;
+        border-color: #007bff;
+      }
+
+      &:hover {
+        background: #f8f9fa;
+      }
+    }
+  }
+}
+
+// blogs home.php design end 
+
+
+// side bar css style start
+.content-area {
+    display: flex;
+    gap: 20px;
+}
+
+.site-main {
+    flex: 3;
+}
+
+.sidebar-wrapper {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+}
+
+.sidebar-wrapper .widget {
+    margin-bottom: 20px;
+}
+
+.sidebar-wrapper .widget-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+// side bar css style end

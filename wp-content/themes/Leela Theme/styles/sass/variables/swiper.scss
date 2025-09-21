@@ -1,0 +1,33 @@
+@use "colors" as *;
+@use "_fonts" as *;
+
+
+body {
+      background: $white;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: $black;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: $font-sm;
+      background: $gray-800;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }

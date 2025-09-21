@@ -1,0 +1,71 @@
+@use "colors" as *;
+@use "spacing" as *;
+
+.service-card {
+  width: 90%;
+  max-width: 440px;
+  color: $text-light;
+  text-align: center;
+  padding: $space-xl $space-lg;
+  border: 1px solid rgba($white, 0.3);
+  background: rgba($white, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba($black, 0.1);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 40px rgba($black, 0.2);
+  }
+
+  img {
+    width: 100px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: $space-md;
+    color: $tech-blue;
+  }
+
+  p {
+    font-size: 0.9rem;
+    margin: $space-xs auto;
+    color: $text-dark;
+  }
+
+  .links {
+    img {
+      width: 40px;
+      border-radius: 50%;
+      margin: $space-sm $space-xs;
+      transition: background 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background: $bg-white-blue;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  background: $btn-primary-bg;
+  color: $btn-primary-color;
+  padding: $space-sm $space-lg;
+  border-radius: 30px;
+  margin: $space-lg 0 $space-sm;
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+
+  &:hover {
+    background: $btn-hover-bg;
+    border: 1px solid $white;
+    color: $white;
+  }
+}

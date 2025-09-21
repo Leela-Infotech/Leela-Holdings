@@ -1,0 +1,83 @@
+// Loader Animation Styles
+// ------------------------
+
+@use "colors" as *; // using your theme colors
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.services-container {
+  background: linear-gradient(45deg, $primary-gradient-start, $primary-gradient-end);
+}
+
+.strain {
+  width: 155px;
+  height: 1px;
+  background-color: $gray-200;
+  position: relative;
+  margin: 28px auto;
+  animation: rotate-strain 1.7s linear infinite;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $white; // from your theme
+    margin-top: -9px;
+  }
+
+  &::before {
+    left: 0;
+    margin-left: -9px;
+    animation: strain-size-left 1.7s linear infinite;
+  }
+
+  &::after {
+    right: 0;
+    margin-right: -9px;
+    animation: strain-size-right 1.7s linear infinite;
+  }
+
+  // Delay setup with Sass loop
+  @for $i from 1 through 12 {
+    &:nth-child(#{$i}),
+    &:nth-child(#{$i})::before,
+    &:nth-child(#{$i})::after {
+      animation-delay: #{0.15s * $i};
+    }
+  }
+}
+
+// Keyframes
+@keyframes rotate-strain {
+  0%, 50%, 100% { width: 155px; }
+  25%, 75% { width: 0; }
+}
+
+@keyframes strain-size-left {
+  0%   { transform: scale(1) translateX(0); }
+  25%  { transform: scale(0.5); }
+  50%  { transform: scale(1) translateX(155px); }
+  75%  { transform: scale(1.5); }
+  100% { transform: scale(1) translateX(0); }
+}
+
+@keyframes strain-size-right {
+  0%   { transform: scale(1) translateX(0); }
+  25%  { transform: scale(1.5); }
+  50%  { transform: scale(1) translateX(-155px); }
+  75%  { transform: scale(0.5); }
+  100% { transform: scale(1) translateX(0); }
+}

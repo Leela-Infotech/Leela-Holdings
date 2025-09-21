@@ -26,12 +26,26 @@ $services = [
         'description' => 'A fast-growing clothing and lifestyle initiative focused on delivering trendy, affordable fashion items within 10–30 minutes across our service locations. Our goal is to combine style, convenience, and quality for a superior shopping experience.',
         'button_text' => 'Discover Leela Wear',
         'button_link' => home_url('#')
+    ],
+    [
+        'icon' => get_template_directory_uri() . '/images/services-images/transport.png',
+        'title' => 'Leela Transport',
+        'description' => 'Leela Transport is dedicated to safe, reliable, and efficient transportation services. From personal logistics to business deliveries, we ensure timely and secure movement of goods, helping individuals and businesses stay connected and productive.',
+        'button_text' => 'Discover Leela Wear',
+        'button_link' => home_url('#')
+    ],
+    [
+        'icon' => get_template_directory_uri() . '/images/services-images/retail.png',
+        'title' => 'Leela Retail',
+        'description' => 'Leela Retail is our one-stop solution for shopping everyday essentials and lifestyle products. We focus on providing a seamless shopping experience with a wide range of quality items, quick delivery, and customer satisfaction at the heart of everything we do.',
+        'button_text' => 'Discover Leela Wear',
+        'button_link' => home_url('#')
     ]
 ];
 ?>
 
 <main class="bg-white py-5">
-    <div class="container text-center">
+    <div class="container text-center shadow p-5">
         <h1 class="mb-2">Brands Under Leela Holdings</h1>
         <p class="mb-5">From web development to fashion, explore our diverse ventures.</p>
 
@@ -41,7 +55,7 @@ $services = [
             <div class="col-lg-4 col-md-6 d-flex justify-content-center <?php echo ($index > 0) ? 'd-none d-md-block' : ''; ?>">
                 <div class="service-card h-100 w-100" data-tilt>
                     <div class="text-center mb-3">
-                        <img src="<?php echo esc_url($service['icon']); ?>" alt="<?php echo esc_attr($service['title']); ?> Icon" class="rounded-circle border border-3 border-success" style="width:80px; height:80px; object-fit:cover;">
+                        <img src="<?php echo esc_url($service['icon']); ?>" alt="<?php echo esc_attr($service['title']); ?> Icon" class="services-logo" style="width:80px; height:80px; object-fit:cover;">
                     </div>
                     <h2><?php echo esc_html($service['title']); ?></h2>
                     <p><?php echo esc_html($service['description']); ?></p>

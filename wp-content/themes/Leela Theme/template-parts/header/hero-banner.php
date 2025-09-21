@@ -9,31 +9,51 @@ $base_url = "https://infotech.leelaholdings.in";
 
 // Image paths (relative to root)
 $images = [
+      [
+        "url" => "/images/banner/tests.jpg",
+        "alt" => "Second Image",
+        "class" => "my-img h-100",
+        "title" => "Leela Tests",
+        "description" => "Prepare smarter, succeed faster.",
+        "button" => "link to Tests site",
+        "button_link" => "https://tests.leelaholdings.in"
+    ],
     [
         "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
         "alt" => "First Image",
         "class" => "my-img h-100",
-        "title" => "Empathy in Every Line of Code",
-        "description" => "We listen first then build software that fits your narrative.",
-        "button" => "Click Here"
-    ],
+        "title" => "Leela Infotech",
+        "description" => "Professional websites for your business.",
+        "button" => "link to Infotech site",
+        "button_link" => "https://infotech.leelaholdings.in"
 
-    [
-        "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
-        "alt" => "Second Image",
-        "class" => "my-img h-100",
-        "title" => "Your Goals, Engineered for Growth",
-        "description" => "Strategy, design, and code that drive measurable outcomes.",
-        "button" => "Click Here"
     ],
-
     [
-        "url" => "/wp-content/uploads/2025/09/workers-scaled.jpg",
+        "url" => "/images/banner/wear.jpg",
         "alt" => "Third Image",
         "class" => "my-img h-100",
-        "title" => "From Idea to Impact",
-        "description" => "Design, development & mobile app expertise—all aiming for tangible results.",
-        "button" => "Click Here"
+        "title" => "Leela Wear",
+        "description" => "Trendy fashion delivered to your doorstep",
+        "button" => "Link to Wear site",
+        "button_link" => "https://wear.leelaholdings.in"
+    ],
+       [
+        "url" => "/images/banner/transport.jpg",
+        "alt" => "Fourth Image",
+        "class" => "my-img h-100",
+        "title" => "Leela Transport",
+        "description" => "Fast & reliable transport services",
+        "button" => "link to Transport site",
+        "button_link" => "https://transport.leelaholdings.in"
+       ],
+          [
+        "url" => "/images/banner/retail.jpg",
+        "alt" => "Fifth Image",
+        "class" => "my-img h-100",
+        "title" => "Leela Retail",
+        "description" => "Shop your essentials with ease",
+        "button" => "link to Retail site",
+        "button_link" => "https://retail.leelaholdings.in"
     ]
 
 ];
@@ -52,7 +72,7 @@ $images = [
                         <div class="container text-white">
                             <h1 class="h1"><?php echo $img["title"]; ?></h1>
                             <p class="mb-3"><?php echo $img["description"]; ?></p>
-                            <a href="/contact/" class="btn-primary"> <?php echo $img["button"] ?></a>
+                            <a href="<?php echo esc_url($img['button_link']); ?>" class="btn-primary"> <?php echo $img["button"] ?></a>
                         </div>
                     </div>
                 </swiper-slide>

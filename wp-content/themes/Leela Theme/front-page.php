@@ -21,7 +21,7 @@ get_header();
     <h2 class="h1 pt-5">Ready to build a stellar WordPress website?</h2>
     <p class="text-12">Fill the details & Our Project Manager will get in touch with you within several hours.</p>
     <?php 
-  echo do_shortcode('[wpforms id="106" title="false"]');
+  echo do_shortcode('[wpforms id="282" title="false"]');
      ?>
   </div>
 </section>

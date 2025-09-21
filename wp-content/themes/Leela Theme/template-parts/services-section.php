@@ -7,25 +7,25 @@
 // Array of services
 $services = [
     [
-        'icon' => get_template_directory_uri() . '/images/graduation-cap.png',
+        'icon' => get_template_directory_uri() . '/images/services-images/education.png',
         'title' => 'Leela Tests',
         'description' => 'Our upcoming platform designed to help students excel in competitive exams such as SSC CGL, CHSL, SSB, and more. We provide structured MCQ test series, instant scoring, and detailed analytics to support effective preparation.',
         'button_text' => 'Explore Leela Tests',
-        'button_link' => home_url('/services/ui-ux-design/')
+        'button_link' => home_url('#')
     ],
     [
-        'icon' => get_template_directory_uri() . '/images/laptop-code.png',
+        'icon' => get_template_directory_uri() . '/images/services-images/programming.png',
         'title' => 'Leela Infotech',
         'description' => 'A web development division under Leela Holdings dedicated to empowering small businesses and entrepreneurs with professional, responsive websites. Our expert developers deliver custom solutions to showcase your services, sell products, and grow your online presence.',
         'button_text' => 'Visit Leela Infotech',
-        'button_link' => home_url('/services/web-development/')
+        'button_link' => 'https://infotech.leelaholdings.in'
     ],
     [
-        'icon' => get_template_directory_uri() . '/images/t-shirt.png',
+        'icon' => get_template_directory_uri() . '/images/services-images/tshirt.png',
         'title' => 'Leela Wear',
         'description' => 'A fast-growing clothing and lifestyle initiative focused on delivering trendy, affordable fashion items within 10–30 minutes across our service locations. Our goal is to combine style, convenience, and quality for a superior shopping experience.',
         'button_text' => 'Discover Leela Wear',
-        'button_link' => home_url('/services/digital-marketing/')
+        'button_link' => home_url('#')
     ]
 ];
 ?>

@@ -33,7 +33,7 @@
 <section class="services-container p-lg-5 p-2">
   <div class="container">
     <!-- Values -->
-    <div class="row text-center m-lg-5 rounded p-5 bg-white">
+    <div class="row text-center m-lg-5 rounded p-5 bg-white d-lg-block d-none">
       <h3 class="section-subtitle mb-4">Our Core Values</h3>
       <div class="col-md-3 mb-4">
         <div class="value-card p-4 h-100 shadow-sm rounded">
@@ -94,7 +94,7 @@
     </div>
 
     <!-- News -->
-    <div class="news m-lg-5 p-5 bg-white rounded">
+    <div class="news m-lg-5 p-5 bg-white rounded d-lg-block d-none">
       <h3 class="section-subtitle text-center mb-4">Latest Updates</h3>
       <div class="row">
         <div class="col-md-4 mb-4">

@@ -32,8 +32,8 @@
 </section>
 <section class="services-container p-lg-5 p-2">
   <div class="container">
-    <!-- Values -->
-    <div class="row text-center m-lg-5 rounded p-5 bg-white d-lg-block d-none">
+    <!-- Values display none --> 
+    <div class="row text-center m-lg-5 rounded p-5 bg-white d-none">
       <h3 class="section-subtitle mb-4">Our Core Values</h3>
       <div class="col-md-3 mb-4">
         <div class="value-card p-4 h-100 shadow-sm rounded">

@@ -33,7 +33,7 @@
 <section class="services-container p-lg-5 p-2">
   <div class="container">
     <!-- Values -->
-    <div class="row text-center mb-5">
+    <div class="row text-center m-lg-5 rounded p-5 bg-white">
       <h3 class="section-subtitle mb-4">Our Core Values</h3>
       <div class="col-md-3 mb-4">
         <div class="value-card p-4 h-100 shadow-sm rounded">
@@ -66,26 +66,26 @@
     </div>
 
     <!-- Metrics -->
-    <div class="row text-center mb-5">
-      <div class="col-md-3">
+    <div class="row text-center m-lg-5 p-5 rounded bg-white gap-5 justify-content-center">
+      <div class="col-lg-2 col-md-6 shadow p-5 value-card">
         <div class="metric">
           <h2 class="counter fw-bold text-primary" data-target="5">0</h2>
           <p class="mb-0">Active Brands</p>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-2 col-md-6 shadow p-5 value-card">
         <div class="metric">
           <h2 class="counter fw-bold text-success" data-target="10">0</h2>
           <p class="mb-0">Years of Experience</p>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-2 col-md-6 shadow p-5 value-card">
         <div class="metric">
           <h2 class="counter fw-bold text-danger" data-target="500">0</h2>
           <p class="mb-0">Projects Delivered</p>
         </div>
       </div>
-      <div class="col-md-3">
+      <div class="col-lg-2 col-md-6 shadow p-5 value-card">
         <div class="metric">
           <h2 class="counter fw-bold text-warning" data-target="8">0</h2>
           <p class="mb-0">Cities of Operation</p>
@@ -94,7 +94,7 @@
     </div>
 
     <!-- News -->
-    <div class="news mb-5">
+    <div class="news m-lg-5 p-5 bg-white rounded">
       <h3 class="section-subtitle text-center mb-4">Latest Updates</h3>
       <div class="row">
         <div class="col-md-4 mb-4">

@@ -44,7 +44,7 @@ $services = [
 ];
 ?>
 
-<main class="bg-white py-5">
+<main class="bg-white py-5" id="leela-brands">
     <div class="container text-center shadow p-5">
         <h1 class="mb-2">Brands Under Leela Holdings</h1>
         <p class="mb-5">From web development to fashion, explore our diverse ventures.</p>

@@ -187,10 +187,11 @@ footer {
   }
 
   .value-card {
-    transition: all 0.3s ease;
+    transition: transform 1s ease-in-out;
     &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 15px $primary-gradient-start !important;
+      transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
+      transform: translateY(-10px) scale(1.05);
     }
   }
 
@@ -218,7 +219,5 @@ footer {
   }
 }
 
-.value-card:hover{
-      box-shadow: 0px 0px 15px $primary-gradient-start !important;
-}
+
 // about section end 

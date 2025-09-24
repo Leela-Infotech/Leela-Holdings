@@ -24,108 +24,107 @@
       </div>
       <div class="col-lg-6 text-center">
         <img src="https://leelaholdings.in/wp-content/uploads/2025/09/Frame-1-scaled.png"
-             class="img-fluid rounded shadow"
-             alt="Leela Holdings overview">
+          class="img-fluid rounded shadow" alt="Leela Holdings overview">
       </div>
     </div>
-    </div>
-</section>
-<section class="services-container p-lg-5 p-2">
-  <div class="container">
-    <!-- Values display none --> 
-    <div class="row text-center m-lg-5 rounded p-5 bg-white d-none">
-      <h3 class="section-subtitle mb-4">Our Core Values</h3>
-      <div class="col-md-3 mb-4">
-        <div class="value-card p-4 h-100 shadow-sm rounded">
-          <i class="bi bi-lightbulb display-5 text-primary mb-3"></i>
-          <h5 class="fw-bold">Innovation</h5>
-          <p class="small">We pursue new ideas with disciplined execution.</p>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="value-card p-4 h-100 shadow-sm rounded">
-          <i class="bi bi-people display-5 text-success mb-3"></i>
-          <h5 class="fw-bold">Customer-first</h5>
-          <p class="small">Solutions built around real human needs.</p>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="value-card p-4 h-100 shadow-sm rounded">
-          <i class="bi bi-shield-check display-5 text-danger mb-3"></i>
-          <h5 class="fw-bold">Reliability</h5>
-          <p class="small">We deliver on promises — on time, every time.</p>
-        </div>
-      </div>
-      <div class="col-md-3 mb-4">
-        <div class="value-card p-4 h-100 shadow-sm rounded">
-          <i class="bi bi-graph-up-arrow display-5 text-warning mb-3"></i>
-          <h5 class="fw-bold">Sustainable Growth</h5>
-          <p class="small">Profitable growth that benefits customers and communities.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Metrics -->
-    <div class="row text-center m-lg-5 p-5 rounded bg-white gap-5 justify-content-center">
-      <div class="col-lg-2 col-md-6 shadow p-5 value-card">
-        <div class="metric">
-          <h2 class="counter fw-bold text-primary" data-target="5">0</h2>
-          <p class="mb-0">Active Brands</p>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-6 shadow p-5 value-card">
-        <div class="metric">
-          <h2 class="counter fw-bold text-success" data-target="10">0</h2>
-          <p class="mb-0">Years of Experience</p>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-6 shadow p-5 value-card">
-        <div class="metric">
-          <h2 class="counter fw-bold text-danger" data-target="500">0</h2>
-          <p class="mb-0">Projects Delivered</p>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-6 shadow p-5 value-card">
-        <div class="metric">
-          <h2 class="counter fw-bold text-warning" data-target="8">0</h2>
-          <p class="mb-0">Cities of Operation</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- News -->
-    <div class="news m-lg-5 p-5 bg-white rounded d-lg-block d-none">
-      <h3 class="section-subtitle text-center mb-4">Latest Updates</h3>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">Leela Wear launches new seasonal collection</h5>
-              <p class="card-text small">Curated seasonal line focused on comfort and sustainability.</p>
-              <a href="#" class="stretched-link">Read more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">Leela Infotech expands team</h5>
-              <p class="card-text small">Strengthening our engineering team to accelerate delivery.</p>
-              <a href="#" class="stretched-link">Read more</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm h-100">
-            <div class="card-body">
-              <h5 class="card-title">Leela Tests: new mock series</h5>
-              <p class="card-text small">Comprehensive test series to help aspirants prepare better.</p>
-              <a href="#" class="stretched-link">Read more</a>
-            </div>
-          </div>
-        </div>
-      </div>
-</div>
   </div>
-</section>
 
+  <section class="services-container p-lg-5 p-2">
+    <div class="container">
+      <!-- Values display none -->
+      <div class="row text-center m-lg-5 rounded p-5 bg-white d-none">
+        <h3 class="section-subtitle mb-4">Our Core Values</h3>
+        <div class="col-md-3 mb-4">
+          <div class="value-card p-4 h-100 shadow-sm rounded">
+            <i class="bi bi-lightbulb display-5 text-primary mb-3"></i>
+            <h5 class="fw-bold">Innovation</h5>
+            <p class="small">We pursue new ideas with disciplined execution.</p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="value-card p-4 h-100 shadow-sm rounded">
+            <i class="bi bi-people display-5 text-success mb-3"></i>
+            <h5 class="fw-bold">Customer-first</h5>
+            <p class="small">Solutions built around real human needs.</p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="value-card p-4 h-100 shadow-sm rounded">
+            <i class="bi bi-shield-check display-5 text-danger mb-3"></i>
+            <h5 class="fw-bold">Reliability</h5>
+            <p class="small">We deliver on promises — on time, every time.</p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="value-card p-4 h-100 shadow-sm rounded">
+            <i class="bi bi-graph-up-arrow display-5 text-warning mb-3"></i>
+            <h5 class="fw-bold">Sustainable Growth</h5>
+            <p class="small">Profitable growth that benefits customers and communities.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Metrics -->
+      <div class="row text-center m-lg-5 p-5 rounded bg-white gap-5 justify-content-center">
+        <div class="col-lg-2 col-md-6 shadow p-5 value-card">
+          <div class="metric">
+            <h2 class="counter fw-bold text-primary" data-target="5">0</h2>
+            <p class="mb-0">Active Brands</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 shadow p-5 value-card">
+          <div class="metric">
+            <h2 class="counter fw-bold text-success" data-target="10">0</h2>
+            <p class="mb-0">Years of Experience</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 shadow p-5 value-card">
+          <div class="metric">
+            <h2 class="counter fw-bold text-danger" data-target="500">0</h2>
+            <p class="mb-0">Projects Delivered</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 shadow p-5 value-card">
+          <div class="metric">
+            <h2 class="counter fw-bold text-warning" data-target="8">0</h2>
+            <p class="mb-0">Cities of Operation</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- News -->
+      <div class="news m-lg-5 p-5 bg-white rounded d-lg-block d-none">
+        <h3 class="section-subtitle text-center mb-4">Latest Updates</h3>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card value-card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Leela Wear launches new seasonal collection</h5>
+                <p class="card-text small">Curated seasonal line focused on comfort and sustainability.</p>
+                <a href="#" class="stretched-link">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card value-card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Leela Infotech expands team</h5>
+                <p class="card-text small">Strengthening our engineering team to accelerate delivery.</p>
+                <a href="#" class="stretched-link">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card value-card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Leela Tests: new mock series</h5>
+                <p class="card-text small">Comprehensive test series to help aspirants prepare better.</p>
+                <a href="#" class="stretched-link">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

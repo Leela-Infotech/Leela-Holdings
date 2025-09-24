@@ -5,7 +5,7 @@
  */
 
 $site_logo =[
-       "url"  => "images/logo/site-logo.svg",
+       "url"  => "/images/logo/leelaholdings.svg",
        "alt" => "Leela Infotech Logo", 
        "class" => "img-logo"
      ];

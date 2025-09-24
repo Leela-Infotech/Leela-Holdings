@@ -13,7 +13,7 @@ $images = [
         "title" => "Leela Holdings",
         "description" => "A diversified group in technology, education, retail, and logistics — building businesses that last.",
         "button" => "Explore Our Brands",
-        "button_link" => "https://tests.leelaholdings.in"
+        "button_link" => "#leela-brands"
     ],
       [
         "url" => '/wp-content/uploads/2025/09/tests-scaled.jpg',
@@ -21,7 +21,7 @@ $images = [
         "class" => "my-img h-100",
         "title" => "Leela Tests",
         "description" => "Prepare smarter, succeed faster.",
-        "button" => "link to Tests site",
+        "button" => "Discover Leela Tests",
         "button_link" => "https://tests.leelaholdings.in"
     ],
     [
@@ -30,7 +30,7 @@ $images = [
         "class" => "my-img h-100",
         "title" => "Leela Infotech",
         "description" => "Professional websites for your business.",
-        "button" => "link to Infotech site",
+        "button" => "Discover Leela Infotech",
         "button_link" => "https://infotech.leelaholdings.in"
 
     ],
@@ -40,7 +40,7 @@ $images = [
         "class" => "my-img h-100",
         "title" => "Leela Wear",
         "description" => "Trendy fashion delivered to your doorstep",
-        "button" => "Link to Wear site",
+        "button" => "Discover Leela Wear",
         "button_link" => "https://wear.leelaholdings.in"
     ],
        [
@@ -49,7 +49,7 @@ $images = [
         "class" => "my-img h-100",
         "title" => "Leela Transport",
         "description" => "Fast & reliable transport services",
-        "button" => "link to Transport site",
+        "button" => "Discover Leela Transport",
         "button_link" => "https://transport.leelaholdings.in"
        ],
           [
@@ -58,7 +58,7 @@ $images = [
         "class" => "my-img h-100",
         "title" => "Leela Retail",
         "description" => "Shop your essentials with ease",
-        "button" => "link to Retail site",
+        "button" => "Discover Leela Retail",
         "button_link" => "https://retail.leelaholdings.in"
     ]
 

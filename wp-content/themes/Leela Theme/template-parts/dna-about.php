@@ -108,11 +108,11 @@
         while ($latest_posts->have_posts()) : $latest_posts->the_post(); ?>
           <div class="col-md-4 mb-4">
             <a href="<?php the_permalink(); ?>" class="text-decoration-none text-dark">
-              <div class="card value-card h-100">
+              <div class="card value-card h-100 shadow">
                 <div class="card-body d-flex flex-column">
                   <h5 class="card-title"><?php the_title(); ?></h5>
                   <p class="card-text flex-grow-1">
-                    <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?> <span class="font-weight-bold">Read more</span>
+                    <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?> <span class="font-weight-bold">....</span>
                   </p>
                 </div>
               </div>

@@ -97,7 +97,6 @@
   <h2 class="section-subtitle text-center mb-4">Latest Updates</h2>
   <div class="row">
     <?php
-      // Query last 3 posts from "post" type (blogs)
       $latest_posts = new WP_Query(array(
         'post_type' => 'post',
         'posts_per_page' => 3,
@@ -108,17 +107,16 @@
       if ($latest_posts->have_posts()) :
         while ($latest_posts->have_posts()) : $latest_posts->the_post(); ?>
           <div class="col-md-4 mb-4">
-            <div class="card value-card h-100">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title"><?php the_title(); ?></h5>
-                <p class="card-text flex-grow-1">
-                  <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?>
-                </p>
-                <a href="<?php the_permalink(); ?>" class="mt-auto text-decoration-none font-weight-bold">
-                  Read more
-                </a>
+            <a href="<?php the_permalink(); ?>" class="text-decoration-none text-dark">
+              <div class="card value-card h-100">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title"><?php the_title(); ?></h5>
+                  <p class="card-text flex-grow-1">
+                    <?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?> <span class="font-weight-bold">Read more</span>
+                  </p>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         <?php endwhile;
         wp_reset_postdata();

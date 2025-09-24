@@ -10,14 +10,14 @@ $services = [
         'icon' => '/wp-content/uploads/2025/09/education.png',
         'title' => 'Leela Tests',
         'description' => 'Our upcoming platform designed to help students excel in competitive exams such as SSC CGL, CHSL, SSB, and more. We provide structured MCQ test series, instant scoring, and detailed analytics to support effective preparation.',
-        'button_text' => 'Explore Leela Tests',
+        'button_text' => 'Discover Leela Tests',
         'button_link' => home_url('#')
     ],
     [
         'icon' => '/wp-content/uploads/2025/09/programming.png',
         'title' => 'Leela Infotech',
         'description' => 'A web development division under Leela Holdings dedicated to empowering small businesses and entrepreneurs with professional, responsive websites. Our expert developers deliver custom solutions to showcase your services, sell products, and grow your online presence.',
-        'button_text' => 'Visit Leela Infotech',
+        'button_text' => 'Discover Leela Infotech',
         'button_link' => 'https://infotech.leelaholdings.in'
     ],
     [

@@ -23,10 +23,16 @@ $footer_images = [
         <footer class="text-white text-start footer-container" style="background-color: #231f20;">
             <main class="d-flex flex-column">
                 <div class="container py-5">
-                    <div class="row pt-4 text-center">
+                    <div class="row pt-4 text-left">
                         <div class="col-lg-4 col-md-6">
+                             <div class="footer-leela">
+                        <h4>About Leela Holdings</h4>
+                        <p>Leela Holdings is a diversified group across technology, education, retail, and logistics — dedicated to building businesses that last.</p>
+                    </div>
+                    <div>
                             <h5>Leela Infotech, Inc.</h5>
                             <p class="text-12">Designed by <a class="text-warning fw-semibold text-decoration-none link-light" href="https://portfolio.leelaholdings.in/">Atul Chambyal.</a></p>
+                       </div>
                         </div>
                         <div class="col-lg-8 col-md-6">
                     <section class="row">

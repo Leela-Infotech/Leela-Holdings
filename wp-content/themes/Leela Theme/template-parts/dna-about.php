@@ -93,38 +93,39 @@
       </div>
 
       <!-- News -->
-      <div class="news m-lg-5 p-5 bg-white rounded d-lg-block d-none">
-        <h3 class="section-subtitle text-center mb-4">Latest Updates</h3>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card value-card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Leela Wear launches new seasonal collection</h5>
-                <p class="card-text small">Curated seasonal line focused on comfort and sustainability.</p>
-                <a href="#" class="stretched-link">Read more</a>
-              </div>
-            </div>
+      <section class="latest-updates">
+  <h2>Latest Updates</h2>
+  <div class="updates-wrapper">
+    <?php
+      // Query last 3 posts from "post" type (blogs)
+      $latest_posts = new WP_Query(array(
+        'post_type' => 'post',
+        'posts_per_page' => 3,
+        'orderby' => 'date',
+        'order' => 'DESC'
+      ));
+
+      if ($latest_posts->have_posts()) :
+        while ($latest_posts->have_posts()) : $latest_posts->the_post(); ?>
+          <div class="update-card">
+            <h3><?php the_title(); ?></h3>
+            <p><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
+            <a href="<?php the_permalink(); ?>">Read more</a>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card value-card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Leela Infotech expands team</h5>
-                <p class="card-text small">Strengthening our engineering team to accelerate delivery.</p>
-                <a href="#" class="stretched-link">Read more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card value-card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Leela Tests: new mock series</h5>
-                <p class="card-text small">Comprehensive test series to help aspirants prepare better.</p>
-                <a href="#" class="stretched-link">Read more</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <?php endwhile;
+        wp_reset_postdata();
+      else : ?>
+        <p>No updates available right now.</p>
+      <?php endif; ?>
+  </div>
+
+  <div class="view-all">
+    <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="btn">
+      View All Updates
+    </a>
+  </div>
+</section>
+
     </div>
   </section>
 </section>

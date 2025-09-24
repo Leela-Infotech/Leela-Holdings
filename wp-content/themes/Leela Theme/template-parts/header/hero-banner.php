@@ -7,11 +7,11 @@
 // Image paths (relative to root)
 $images = [
       [
-        "url" => '/wp-content/uploads/2025/09/retail-scaled.jpg',
-        "alt" => "First Image",
+        "url" => '/wp-content/uploads/2025/09/parent-banner-scaled.jpg',
+        "alt" => "Leela Holdings Banner",
         "class" => "my-img h-100",
-        "title" => "Empowering Businesses Across Sectors",
-        "description" => "From technology to fashion, logistics to retail, Leela Holdings drives growth with innovation and trust.",
+        "title" => "Leela Holdings",
+        "description" => "A diversified group in technology, education, retail, and logistics — building businesses that last.",
         "button" => "Explore Our Brands",
         "button_link" => "https://tests.leelaholdings.in"
     ],

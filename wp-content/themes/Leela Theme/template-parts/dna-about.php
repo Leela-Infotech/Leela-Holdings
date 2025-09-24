@@ -93,9 +93,9 @@
       </div>
 
       <!-- News -->
-      <section class="latest-updates">
-  <h2>Latest Updates</h2>
-  <div class="updates-wrapper">
+     <section class="news m-lg-5 p-5 bg-white rounded d-lg-block d-none">
+  <h2 class="section-subtitle text-center mb-4">Latest Updates</h2>
+  <div class="row">
     <?php
       // Query last 3 posts from "post" type (blogs)
       $latest_posts = new WP_Query(array(
@@ -107,10 +107,14 @@
 
       if ($latest_posts->have_posts()) :
         while ($latest_posts->have_posts()) : $latest_posts->the_post(); ?>
-          <div class="update-card">
-            <h3><?php the_title(); ?></h3>
-            <p><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
-            <a href="<?php the_permalink(); ?>">Read more</a>
+          <div class="col-md-4 mb-4">
+            <div class="card value-card h-100">
+              <div class="card-body">
+                <h5 class="card-title"><?php the_title(); ?></h5>
+                <p class="card-text"><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
+                <a href="<?php the_permalink(); ?>" class="btn btn-primary">Read more</a>
+              </div>
+            </div>
           </div>
         <?php endwhile;
         wp_reset_postdata();
@@ -119,12 +123,13 @@
       <?php endif; ?>
   </div>
 
-  <div class="view-all">
-    <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="btn">
+  <div class="view-all text-center mt-4">
+    <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="btn btn-secondary">
       View All Updates
     </a>
   </div>
 </section>
+
 
     </div>
   </section>

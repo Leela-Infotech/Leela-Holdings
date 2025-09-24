@@ -13,35 +13,35 @@ $services = [
         'title' => 'Leela Tests',
         'description' => 'Our upcoming platform designed to help students excel in competitive exams such as SSC CGL, CHSL, SSB, and more. We provide structured MCQ test series, instant scoring, and detailed analytics to support effective preparation.',
         'button_text' => 'Discover Leela Tests',
-        'button_link' => network_site_url('/', $sub)
+        'button_link' => 'https://' . $sub . 'leelaholdings.in'
     ],
     [
         'icon' => '/wp-content/uploads/2025/09/programming.png',
         'title' => 'Leela Infotech',
         'description' => 'A web development division under Leela Holdings dedicated to empowering small businesses and entrepreneurs with professional, responsive websites. Our expert developers deliver custom solutions to showcase your services, sell products, and grow your online presence.',
         'button_text' => 'Discover Leela Infotech',
-        'button_link' => network_site_url('/', $sub)
+        'button_link' => 'https://' . $sub . 'leelaholdings.in'
     ],
     [
         'icon' => '/wp-content/uploads/2025/09/tshirt.png',
         'title' => 'Leela Wear',
         'description' => 'A fast-growing clothing and lifestyle initiative focused on delivering trendy, affordable fashion items within 10–30 minutes across our service locations. Our goal is to combine style, convenience, and quality for a superior shopping experience.',
         'button_text' => 'Discover Leela Wear',
-        'button_link' => network_site_url('/', $sub)
+        'button_link' => 'https://' . $sub . 'leelaholdings.in'
     ],
     [
         'icon' => '/wp-content/uploads/2025/09/transport.png',
         'title' => 'Leela Transport',
         'description' => 'Leela Transport is dedicated to safe, reliable, and efficient transportation services. From personal logistics to business deliveries, we ensure timely and secure movement of goods, helping individuals and businesses stay connected and productive.',
         'button_text' => 'Discover Leela Wear',
-        'button_link' => network_site_url('/', $sub)
+        'button_link' => 'https://' . $sub . 'leelaholdings.in'
     ],
     [
         'icon' => '/wp-content/uploads/2025/09/retail.png',
         'title' => 'Leela Retail',
         'description' => 'Leela Retail is our one-stop solution for shopping everyday essentials and lifestyle products. We focus on providing a seamless shopping experience with a wide range of quality items, quick delivery, and customer satisfaction at the heart of everything we do.',
         'button_text' => 'Discover Leela Wear',
-        'button_link' => network_site_url('/', $sub)
+        'button_link' => 'https://' . $sub . 'leelaholdings.in'
     ]
 ];
 }

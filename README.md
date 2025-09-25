@@ -19,9 +19,9 @@ Our mission is to create and manage businesses across multiple industries while 
 
 ## 📫 Contact & Links
 
-- **Website:** [https://leelaholdings.in](https://leelaholdings.in) (example link)
-- **Email:** info@leelaholdings.in
-- **GitHub Organization:** [Leela Holdings](https://github.com/your-org-name)  
+- **Website:** [https://leelaholdings.in](https://leelaholdings.in)
+- **Email:** leela@leelaholdings.in
+- **GitHub Organization:** [Leela Holdings](https://github.com/Leela-Infotech/Leela-Holdings)  
 
 ---
 

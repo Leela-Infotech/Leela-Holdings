@@ -64,6 +64,35 @@ function hide_admin_bar_for_subscribers() {
 add_action('after_setup_theme', 'hide_admin_bar_for_subscribers');
 
 
+//Github url dynamic start
+add_action('wp_dashboard_setup', function () {
+    wp_add_dashboard_widget(
+        'github_dashboard_widget',
+        'GitHub Repository',
+        function () {
+            // Try to get GitHub URL from plugin header (if this is in a plugin)
+            if (function_exists('get_file_data')) {
+                $plugin_data = get_file_data(__FILE__, array('PluginURI' => 'Plugin URI'));
+                $github_url = !empty($plugin_data['PluginURI']) ? $plugin_data['PluginURI'] : '';
+            }
+
+            // If not found, try from theme header
+            if (empty($github_url)) {
+                $theme = wp_get_theme();
+                $github_url = $theme->get('ThemeURI');
+            }
+
+            // Display the GitHub link if found
+            if (!empty($github_url)) {
+                echo '<p><a href="' . esc_url($github_url) . '" target="_blank">🔗 View GitHub Repo</a></p>';
+            } else {
+                echo '<p>No GitHub URL set in plugin or theme header.</p>';
+            }
+        }
+    );
+});
+//Github url dynamic end
+
 
 // Shortcode for clickable phone number
 add_shortcode('site_phone_number', function () {

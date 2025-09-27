@@ -9,8 +9,9 @@ get_header();
    <main id="main" class="site-main">
   <div class="container-fluid p-0">
     <?php 
-  get_template_part('/template-parts/services-section');
-  get_template_part('/template-parts/dna-about');
+  get_template_part('template-parts/services-section');
+  get_template_part('template-parts/about');
+
 
      ?>
   </div>

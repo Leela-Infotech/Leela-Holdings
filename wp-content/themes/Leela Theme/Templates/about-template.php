@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Services Template
+ * Template Name: About Template
  * @package Leela Infotech
  */
 
@@ -18,13 +18,9 @@ get_header(); ?>
     </div>
 
     <!-- Services Section -->
-    <?php 
-    get_template_part('template-parts/dna-about-services');
-    if( ! is_page(402) ){
-    get_template_part('template-parts/services-section');
-     get_template_part('template-parts/CTA/a');
-    }
-      ?>
+    <?php get_template_part('template-parts/services-section');?>
+<?php get_template_part('template-parts/CTA/b.php'); ?>
+
 </main>
 
 <?php

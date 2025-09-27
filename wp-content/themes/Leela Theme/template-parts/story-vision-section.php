@@ -44,6 +44,7 @@ $services = [
 ];
 
 ?>
+<section class="services-container">
 <div class="container">
 <div class="row py-5">
   <div class="about-section col-lg-6 col-md-12">
@@ -95,7 +96,7 @@ $services = [
   </div>
 </div>
 </div>
-
+</section>
 
 
 

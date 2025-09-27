@@ -218,6 +218,62 @@ footer {
     }
   }
 }
-
-
 // about section end 
+
+// about page 
+.team-card {
+  position: relative;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+
+  .team-desc {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    transition: all 0.4s ease;
+  }
+
+  &:hover .team-desc {
+    max-height: 200px;
+    opacity: 1;
+  }
+
+  .designation {
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+    .toggle-icon {
+      position: relative;
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+
+      &::before {
+        content: "+";
+        font-weight: bold;
+        font-size: 1rem;
+        transition: transform 0.3s ease;
+      }
+    }
+  }
+
+  &:hover .designation .toggle-icon::before {
+    content: "-";
+  }
+}
+// about page end 

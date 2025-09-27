@@ -69,7 +69,8 @@ $services = [
         centered-slides="true" 
         slides-per-view="1"
         autoplay-delay="2500" 
-        autoplay-disable-on-interaction="false">
+        autoplay-disable-on-interaction="false"
+        autoplay-pause-on-mouse-enter="true">
         
         <?php foreach ($services as $service): ?>
           <swiper-slide>

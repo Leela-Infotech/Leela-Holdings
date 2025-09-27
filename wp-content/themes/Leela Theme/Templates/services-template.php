@@ -19,7 +19,7 @@ get_header(); ?>
 
     <!-- Services Section -->
     <?php get_template_part('template-parts/services-section');
-     get_template_part('template-parts/CTA/a.php') ?>
+     get_template_part('template-parts/CTA/a') ?>
 </main>
 
 <?php

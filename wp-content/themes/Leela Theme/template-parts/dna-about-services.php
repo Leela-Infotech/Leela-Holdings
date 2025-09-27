@@ -28,7 +28,7 @@ $paragraph="At Leela Holdings, we combine experience, technology, and creativity
 
           <div class="col-lg-8 col-md-12">
             <h2><?php echo $heading; ?></h2>
-        <p class="text-16 w-100 text-white"><?php echo $paragraph ?></p>
+        <p class="text-16 w-100 text-black"><?php echo $paragraph ?></p>
 
           <div class="row text-center g-4 p-5">
       <div class="col-md-4">
@@ -37,7 +37,7 @@ $paragraph="At Leela Holdings, we combine experience, technology, and creativity
         <p class="text-muted">Years of experience delivering reliable results.</p>
       </div>
       <div class="col-md-4">
-        <i class="fa-regular fa-lighbulb fs-1 mb-2 text-warning"></i>
+        <i class="fa-regular fa-lightbulb fs-1 mb-2 text-warning"></i>
         <h3>Innovative Approach</h3>
         <p class="text-muted">Cutting-edge strategies customized for your business.</p>
       </div>

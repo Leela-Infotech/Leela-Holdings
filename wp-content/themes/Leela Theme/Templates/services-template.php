@@ -18,8 +18,11 @@ get_header(); ?>
     </div>
 
     <!-- Services Section -->
-    <?php get_template_part('template-parts/services-section');
-     get_template_part('template-parts/CTA/a') ?>
+    <?php 
+    get_template_part('/template-parts/CTA/b');
+    get_template_part('template-parts/services-section');
+     get_template_part('template-parts/CTA/a');
+      ?>
 </main>
 
 <?php

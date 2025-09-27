@@ -1,5 +1,5 @@
 
-<div class="container my-5">
+<div class="container mb-5">
     <h2>Core Team</h2>
     <p>Meet the passionate individuals who drive Leela Holdings forward. Our Core Team combines expertise, creativity, and dedication to ensure that every venture thrives and delivers meaningful impact.</p>
   <div class="row g-4">

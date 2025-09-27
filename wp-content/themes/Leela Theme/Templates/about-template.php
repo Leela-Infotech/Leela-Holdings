@@ -19,7 +19,7 @@ get_header(); ?>
 
     <!-- Services Section -->
     <?php
-  
+     get_template_part('template-parts/our-staff-section.php');
      get_template_part('template-parts/story-vision-section');
        get_template_part('template-parts/CTA/b'); 
           ?>

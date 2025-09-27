@@ -75,7 +75,7 @@ $services = [
         <?php foreach ($services as $service): ?>
           <swiper-slide>
             <div class="service-card h-100 w-100" data-tilt>
-              <div class="text-center mb-3">
+              <div class="text-center mb-3 d-flex justify-content-center">
                 <img src="<?php echo esc_url($service['icon']); ?>" 
                      alt="<?php echo esc_attr($service['title']); ?> Icon" 
                      class="services-logo" 
@@ -95,6 +95,9 @@ $services = [
   </div>
 </div>
 </div>
+
+
+
 
 
 

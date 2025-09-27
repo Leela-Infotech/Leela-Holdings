@@ -44,12 +44,27 @@ $services = [
 ];
 
 ?>
-<div class="row">
-  <div class="about-swiper col-lg-6 col-md-12">
+<div class="container">
+<div class="row py-5">
+  <div class="about-section col-lg-6 col-md-12">
+    <div class="p-3">
+      <h2 class="section-title mb-3 fw-bold">Future Vision / Roadmap</h2>
+      <p class="lead">
+        Leela Holdings is a diversified group that builds and operates businesses across technology, education,
+        fashion, retail, and logistics. We partner with entrepreneurs, investors, and customers to deliver practical,
+        scalable solutions that drive growth, trust and long-term value.
+      </p>
+    </div>
+    <div class="p-3">
+      <h2 class="section-title mb-3 fw-bold">Leadership / Team</h2>
+      <p class="lead">
+        Behind every venture at Leela Holdings is a team of passionate leaders and innovators. Our leadership brings together expertise from diverse industries—education, technology, fashion, logistics, and retail—uniting under one vision: to deliver meaningful growth with integrity. We believe success comes not just from what we build, but from the people who make it possible.
+      </p>
+    </div>
+  </div>
+
+   <div class="about-swiper col-lg-6 col-md-12">
     <swiper-container class="mySwiper"
-        pagination="true" 
-        pagination-clickable="true" 
-        navigation="true" 
         space-between="30"
         centered-slides="true" 
         slides-per-view="1"
@@ -76,22 +91,5 @@ $services = [
           </swiper-slide>
         <?php endforeach; ?>
     </swiper-container>
-  </div>
-
-  <div class="about-section col-lg-6 col-md-12">
-    <div class="p-3">
-      <h2 class="section-title mb-3 fw-bold">Future Vision / Roadmap</h2>
-      <p class="lead">
-        Leela Holdings is a diversified group that builds and operates businesses across technology, education,
-        fashion, retail, and logistics. We partner with entrepreneurs, investors, and customers to deliver practical,
-        scalable solutions that drive growth, trust and long-term value.
-      </p>
-    </div>
-    <div class="p-3">
-      <h2 class="section-title mb-3 fw-bold">Leadership / Team</h2>
-      <p class="lead">
-        Behind every venture at Leela Holdings is a team of passionate leaders and innovators. Our leadership brings together expertise from diverse industries—education, technology, fashion, logistics, and retail—uniting under one vision: to deliver meaningful growth with integrity. We believe success comes not just from what we build, but from the people who make it possible.
-      </p>
-    </div>
   </div>
 </div>

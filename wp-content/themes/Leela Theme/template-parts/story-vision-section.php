@@ -46,7 +46,7 @@ $services = [
 ?>
 <section class="services-container">
 <div class="container">
-<div class="row py-5">
+<div class="row py-5 text-white">
   <div class="about-section col-lg-6 col-md-12">
     <div class="p-3">
       <h2 class="section-title mb-3 fw-bold">Future Vision / Roadmap</h2>
@@ -75,7 +75,7 @@ $services = [
         
         <?php foreach ($services as $service): ?>
           <swiper-slide>
-            <div class="service-card h-100 w-100" data-tilt>
+            <div class="service-card h-100 w-100 bg-white" data-tilt>
               <div class="text-center mb-3 d-flex justify-content-center">
                 <img src="<?php echo esc_url($service['icon']); ?>" 
                      alt="<?php echo esc_attr($service['title']); ?> Icon" 

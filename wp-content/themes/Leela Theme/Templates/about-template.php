@@ -19,8 +19,9 @@ get_header(); ?>
 
     <!-- Services Section -->
     <?php
-    get_template_part('template-parts/CTA/b'); 
+  
      get_template_part('template-parts/story-vision-section');
+       get_template_part('template-parts/CTA/b'); 
           ?>
 
 </main>

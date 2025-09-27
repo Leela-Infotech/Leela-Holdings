@@ -21,7 +21,7 @@ html, body {
 .strain {
   width: 155px;
   height: 1px;
-  background-color: $gray-200;
+  background-color: $gray-800;
   position: relative;
   margin: 28px auto;
   animation: rotate-strain 1.7s linear infinite;
@@ -34,7 +34,7 @@ html, body {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background-color: $white; // from your theme
+    background-color: $black;
     margin-top: -9px;
   }
 

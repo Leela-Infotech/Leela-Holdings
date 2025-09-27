@@ -42,12 +42,21 @@ $services = [
         'button_link' => 'https://retail.leelaholdings.in'
     ]
 ];
+
+if(is_front_page()){
+    $heading="Brands Under Leela Holdings";
+    $paragraph="From web development to fashion, explore our diverse ventures.";
+}else{
+    $heading="Services We Provide";
+    $paragraph="Explore the range of solutions we offer to help your business grow and succeed.";
+}
 ?>
 
 <main class="bg-white py-5" id="leela-brands">
     <div class="container text-center shadow p-5">
-        <h1 class="mb-2">Brands Under Leela Holdings</h1>
-        <p class="mb-5">From web development to fashion, explore our diverse ventures.</p>
+
+        <h1 class="mb-2"><?php echo $heading; ?></h1>
+        <p class="mb-5"><?php echo $paragraph; ?></p>
 
         <div class="row g-4 justify-content-center services-grid">
 

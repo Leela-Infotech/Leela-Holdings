@@ -8,7 +8,7 @@ $heading="Empowering Businesses with Expertise and Innovation";
 $paragraph="At Leela Holdings, we combine experience, technology, and creativity to deliver solutions that drive growth. From education and IT to retail, fashion, and logistics, our tailored strategies help businesses thrive in a competitive market. With a focus on quality, efficiency, and measurable results, we ensure your vision becomes reality";
 ?>
 
-<section class="services-container p-lg-5 p-2">
+<section class="p-lg-5 p-2">
       <div class="container">
         <div class="row align-items-center justify-content-center">
           <div class="col-lg-4 col-md-0 d-none d-lg-block">
@@ -28,11 +28,9 @@ $paragraph="At Leela Holdings, we combine experience, technology, and creativity
 
           <div class="col-lg-8 col-md-12">
             <h2><?php echo $heading; ?></h2>
-        <p class="h2 w-100 text-white"><?php echo $paragraph ?></p>
-          </div>
-        </div>
+        <p class="text-16 w-100 text-white"><?php echo $paragraph ?></p>
 
-        <div class="row text-center g-4">
+          <div class="row text-center g-4 p-5">
       <div class="col-md-4">
         <i class="fa-solid fa-shield fs-1 mb-2 text-primary"></i>
         <h3>Trusted Solutions</h3>
@@ -49,5 +47,9 @@ $paragraph="At Leela Holdings, we combine experience, technology, and creativity
         <p class="text-muted">Solutions designed to exceed expectations.</p>
       </div>
     </div>
+          </div>
+        </div>
+
+      
       </div>
     </section>

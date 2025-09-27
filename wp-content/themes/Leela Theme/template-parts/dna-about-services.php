@@ -34,18 +34,18 @@ $paragraph="At Leela Holdings, we combine experience, technology, and creativity
 
         <div class="row text-center g-4">
       <div class="col-md-4">
-        <i class="bi bi-shield-check fs-1 mb-2 text-primary"></i>
-        <h5>Trusted Solutions</h5>
+        <i class="fa-solid fa-shield fs-1 mb-2 text-primary"></i>
+        <h3>Trusted Solutions</h3>
         <p class="text-muted">Years of experience delivering reliable results.</p>
       </div>
       <div class="col-md-4">
-        <i class="bi bi-lightbulb fs-1 mb-2 text-warning"></i>
-        <h5>Innovative Approach</h5>
+        <i class="fa-regular fa-lighbulb fs-1 mb-2 text-warning"></i>
+        <h3>Innovative Approach</h3>
         <p class="text-muted">Cutting-edge strategies customized for your business.</p>
       </div>
       <div class="col-md-4">
-        <i class="bi bi-people fs-1 mb-2 text-success"></i>
-        <h5>Customer-Focused</h5>
+        <i class="fa-solid fa-person fs-1 mb-2 text-success"></i>
+        <h3>Customer-Focused</h3>
         <p class="text-muted">Solutions designed to exceed expectations.</p>
       </div>
     </div>

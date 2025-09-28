@@ -96,51 +96,6 @@ function leela_enqueue_swiper() {
 add_action('wp_enqueue_scripts', 'leela_enqueue_swiper');
 
 
-
-
-
-// QSM QUiz script start
-// Add this to functions.php or via Code Snippets plugin
-function qsm_custom_modal_leaderboard_script() {
-?>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Modal functionality
-  const btn = document.getElementById('showAnswersBtn');
-  const modal = document.getElementById('answersModal');
-  const close = document.getElementById('closeModal');
-
-  btn.addEventListener('click', () => modal.style.display = 'block');
-  close.addEventListener('click', () => modal.style.display = 'none');
-  window.addEventListener('click', (e) => { if(e.target == modal) modal.style.display = 'none'; });
-
-  // Free Leaderboard (sample data)
-  const leaderboardData = [
-    {name: 'Atul', score: 18},
-    {name: 'Shivani', score: 16},
-    {name: 'Rahul', score: 14},
-    {name: 'Neha', score: 12},
-  ];
-
-  const tbody = document.getElementById('leaderboardBody');
-  leaderboardData.sort((a,b) => b.score - a.score); // descending
-  leaderboardData.forEach((user, index) => {
-    const tr = document.createElement('tr');
-    tr.innerHTML = `<td style="padding:10px; border:1px solid #3b7d3b;">${index+1}</td>
-                    <td style="padding:10px; border:1px solid #3b7d3b;">${user.name}</td>
-                    <td style="padding:10px; border:1px solid #3b7d3b;">${user.score}</td>`;
-    tbody.appendChild(tr);
-  });
-});
-</script>
-<?php
-}
-add_action('wp_footer', 'qsm_custom_modal_leaderboard_script');
-// QSM QUiz script end
-
-
-
-
 // Register Sidebar
 function leela_infotech_sidebar() {
     register_sidebar(array(

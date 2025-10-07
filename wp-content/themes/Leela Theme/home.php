@@ -8,7 +8,6 @@ get_header();
 ?>
 
 <div class="container blog-page py-5">
-  Hello
   <?php if ( have_posts() ) : ?>
     <div class="row g-4">
       <?php while ( have_posts() ) : the_post(); ?>

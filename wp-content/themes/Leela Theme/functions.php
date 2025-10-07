@@ -7,7 +7,11 @@
 
 
 // Enable dynamic title support
-add_theme_support( 'title-tag' );
+function leela_theme_setup() {
+    add_theme_support( 'title-tag' );
+}
+add_action( 'after_setup_theme', 'leela_theme_setup' );
+
 
 function leelaHoldings_enqueue_scripts() {
     // Register styles 

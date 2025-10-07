@@ -5,7 +5,9 @@
  * @package leelaHoldings
  */
 
-add_theme_support('title-tag');
+
+// Enable dynamic title support
+add_theme_support( 'title-tag' );
 
 function leelaHoldings_enqueue_scripts() {
     // Register styles 

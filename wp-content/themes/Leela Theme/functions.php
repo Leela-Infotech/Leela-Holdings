@@ -73,7 +73,7 @@ add_action('after_setup_theme', 'hide_admin_bar_for_subscribers');
 
 // Shortcode for clickable phone number
 add_shortcode('site_phone_number', function () {
-    return '<a href="tel:+917018950221">+91-70189-50221</a>';
+    return '<a href="tel:+917018950221">+91 70189-50221</a>';
 });
 
 // Shortcode for clickable site URL

@@ -6,8 +6,9 @@
 ?>
 <main id="about-leela" class="content-section py-5 bg-light">
     <!-- About -->
+       <section class="container">
     <div class="row align-items-center mb-5">
-        <section class="container">
+      
         <div class="col-lg-6">
             <h2 class="section-title mb-3">Leela Holdings — Building Businesses That Last</h2>
             <p class="lead">
@@ -27,8 +28,8 @@
             <img src="https://leelaholdings.in/wp-content/uploads/2025/09/Frame-1-scaled.png"
                 class="img-fluid rounded shadow" alt="Leela Holdings overview">
         </div>
+    </div>    
         </section>
-    </div>
 
     <section class="services-container p-lg-5 p-2">
         <!-- Values display none -->

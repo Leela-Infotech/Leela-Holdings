@@ -6,15 +6,15 @@
  */
 get_header();
 ?>
-    <?php 
+ <div class="container-fluid p-0">
+   <?php 
 
       get_template_part('template-parts/services-section');
       get_template_part('template-parts/about');
     ?>
   </div>
    <main id="main" class="site-main">
-  <div class="container-fluid p-0">
-
+  
   <!-- Front-page contact form start -->
 <section class="bg-white text-black py-5">
   <div class="container">

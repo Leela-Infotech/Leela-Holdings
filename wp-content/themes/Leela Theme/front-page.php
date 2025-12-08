@@ -24,11 +24,7 @@ get_header();
     <p class="text-12">Fill the details & Our Project Manager will get in touch with you within several hours.</p>
     <!-- Partnership CTA -->
     <h2 class="h1 pt-5">Looking to partner with Leela Holdings?</h2>
-    <p class="text-12">For partnerships, investor relations or careers — tell us about your interest.</p>
-    <?php 
-      echo do_shortcode('[wpforms id="282" title="false"]');
-    ?>
-    
+    <p class="text-12">For partnerships, investor relations or careers — tell us about your interest.</p> 
   </div>
 </section>
   <!-- Front-page contact form end -->

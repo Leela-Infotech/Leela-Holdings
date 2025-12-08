@@ -58,10 +58,10 @@ if (is_front_page()) {
         <p class="mb-5"><?php echo $paragraph; ?></p>
     </div>
     <div class="row g-4 justify-content-center services-grid">
-        <section class="container">
+       
         <?php foreach ($services as $index => $service): ?>
-            <div
-                class="col-lg-4 col-md-6 d-flex justify-content-center <?php echo ($index > 0) ? 'd-none d-md-block' : ''; ?>">
+             <section class="container">
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center <?php echo ($index > 0) ? 'd-none d-md-block' : ''; ?>">
                 <div class="service-card h-100 w-100" data-tilt>
                     <div class="text-center mb-3">
                         <img src="<?php echo esc_url(home_url($service['icon'])); ?>"
@@ -75,6 +75,7 @@ if (is_front_page()) {
                     </a>
                 </div>
             </div>
+             </section>
         <?php endforeach; ?>
         <main class="bg-white py-5">
             <div class="container">
@@ -114,6 +115,5 @@ if (is_front_page()) {
                         </div>
                     </div>
         </main>
-        </section>
-    </div>
+       </div>
 </main>

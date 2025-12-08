@@ -51,8 +51,6 @@ if(is_front_page()){
     $paragraph="Explore the range of solutions we offer to help your business grow and succeed.";
 }
 ?>
-<<<<<<< HEAD
-
 <main class="bg-white py-5" id="leela-brands">
     <div class="container text-center shadow p-5">
 
@@ -75,8 +73,6 @@ if(is_front_page()){
                 </div>
             </div>
             <?php endforeach; ?>
-
-=======
 <main class="bg-white py-5">
     <div class="container">
 <div class="row g-4 justify-content-center services-grid">
@@ -101,7 +97,6 @@ if(is_front_page()){
           <h2>Leela wear</h2>
           <p>A fast-growing clothing and lifestyle initiative focused on delivering trendy, affordable fashion items within 10–30 minutes across our service locations. Our goal is to combine style, convenience, and quality for a superior shopping experience....</p>
           <a href="<?php echo esc_url(home_url('/services/digital-marketing/')); ?>" class="btn" target="_blank">Discover Leela Wear</a>
->>>>>>> origin/features/custo-theme
         </div>
     </div>
 </main>

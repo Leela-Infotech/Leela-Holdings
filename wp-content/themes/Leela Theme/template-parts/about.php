@@ -4,8 +4,7 @@
 
 // Replace these with dynamic calls if you store them in ACF/options page
 ?>
-<section id="about-leela" class="content-section py-5 bg-light">
-  <div class="container">
+<main id="about-leela" class="content-section py-5 bg-light">
     <!-- About -->
     <div class="row align-items-center mb-5">
       <div class="col-lg-6">
@@ -27,10 +26,8 @@
           class="img-fluid rounded shadow" alt="Leela Holdings overview">
       </div>
     </div>
-  </div>
 
   <section class="services-container p-lg-5 p-2">
-    <div class="container">
       <!-- Values display none -->
       <div class="row text-center m-lg-5 rounded p-5 bg-white d-none">
         <h3 class="section-subtitle mb-4">Our Core Values</h3>
@@ -132,7 +129,5 @@
   </div>
 </section>
 
-
-    </div>
   </section>
-</section>
+      </main>

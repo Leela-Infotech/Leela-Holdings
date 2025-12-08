@@ -52,7 +52,7 @@ if(is_front_page()){
 }
 ?>
 <main class="bg-white py-5" id="leela-brands">
-    <div class="container text-start shadow p-5">
+    <div class="container text-start shadow">
 
         <h1 class="mb-2"><?php echo $heading; ?></h1>
         <p class="mb-5"><?php echo $paragraph; ?></p>

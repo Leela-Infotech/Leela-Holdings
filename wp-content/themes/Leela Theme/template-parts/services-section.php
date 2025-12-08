@@ -9,7 +9,7 @@ $services = [
     [
         'icon' => '/wp-content/uploads/2025/09/education.png',
         'title' => 'Leela Tests',
-        'description' => 'Our upcoming platform designed to help students excel in competitive exams such as SSC CGL, CHSL, SSB, and more. We provide structured MCQ test series, instant scoring, and detailed analytics to support effective preparation.',
+        'description' => 'Our upcoming platform designed to help students excel in competitive exams such as SSC CGL, CHSL, SSB, and more.',
         'button_text' => 'Discover Leela Tests',
         'button_link' => 'https://tests.leelaholdings.in'
     ],

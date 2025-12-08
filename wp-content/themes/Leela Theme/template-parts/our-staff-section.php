@@ -10,7 +10,7 @@
       [
         'name' => 'Atul Chambyal',
         'designation' => 'Founder & Visionary',
-        'image' => 'https://leelaholdings.in/wp-content/uploads/2025/12/Atul-img12223.png',
+        'image' => 'https://leelaholdings.in/wp-content/uploads/2025/12/atul-img.jpg',
         'desc' => 'Atul laid the foundation of Leela Holdings with the belief that businesses should inspire, innovate, and make lives better.'
       ],
       [

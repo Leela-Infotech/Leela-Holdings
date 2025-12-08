@@ -1,41 +1,41 @@
 <?php
 /**
  * Main template file.
- * 
+ *
  * @package leelaHoldings
  */
+
 get_header();
 ?>
- <div class="container-fluid p-0">
-   <?php 
 
+<main id="main" class="site-main">
+
+  <div class="container-fluid p-0">
+    <?php 
       get_template_part('template-parts/services-section');
       get_template_part('template-parts/about');
     ?>
   </div>
-   <main id="main" class="site-main">
-  
+
   <!-- Front-page contact form start -->
-<section class="bg-white text-black py-5">
-  <div class="container">
-    <!-- Partnership CTA  -->
-    <h2 class="h1 pt-5">Connect with us?</h2>
-    <p class="text-12">Fill the details & Our Project Manager will get in touch with you within several hours.</p>
-        <?php 
-      echo do_shortcode('[wpforms id="282" title="false"]');
-    ?>
-  </div>
-</section>
+  <section class="bg-white text-black py-5">
+    <div class="container">
+      <h2 class="h1 pt-5">Connect with us?</h2>
+      <p class="text-12">Fill the details & Our Project Manager will get in touch with you within several hours.</p>
+      <?php echo do_shortcode('[wpforms id="282" title="false"]'); ?>
+    </div>
+  </section>
   <!-- Front-page contact form end -->
 
-<?php 
+  <?php 
     if ( have_posts() ) {
-        while ( have_posts() ) {
-            the_post();
-            the_content(); // Elementor content
-        }
+      while ( have_posts() ) {
+        the_post();
+        the_content(); // Elementor content
+      }
     }
-?>
+  ?>
+
 </main>
 
 <?php get_footer(); ?>

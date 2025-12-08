@@ -57,7 +57,7 @@ if (is_front_page()) {
         <h1 class="mb-2"><?php echo $heading; ?></h1>
         <p class="mb-5"><?php echo $paragraph; ?></p>
     </div>
-    <div class="row g-4 justify-content-center services-grid">
+    <div class="row g-4 justify-content-center services-grid container">
         <?php foreach ($services as $index => $service): ?>
             <div
                 class="col-lg-4 col-md-6 d-flex justify-content-center <?php echo ($index > 0) ? 'd-none d-md-block' : ''; ?>">
@@ -74,6 +74,7 @@ if (is_front_page()) {
                     </a>
                 </div>
             </div>
+             </div>
         <?php endforeach; ?>
         <main class="bg-white py-5">
             <div class="container">
@@ -113,5 +114,4 @@ if (is_front_page()) {
                         </div>
                     </div>
         </main>
-    </div>
 </main>

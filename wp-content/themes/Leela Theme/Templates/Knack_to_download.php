@@ -22,6 +22,3 @@ get_header(); ?>
     get_template_part('template-parts\CTA\c.php');
       ?>
 </main>
-
-<?php
-get_footer();

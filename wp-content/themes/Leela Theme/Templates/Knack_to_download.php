@@ -19,6 +19,6 @@ get_header(); ?>
 
     <!-- Services Section -->
     <?php 
-    get_template_part('template-parts\CTA\c.php');
+    get_template_part('template-parts\CTA\c');
       ?>
 </main>

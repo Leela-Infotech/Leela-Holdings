@@ -101,7 +101,7 @@ $images = [
         </section>
 <?php } else if ( ! is_page(528) ) { ?>
 
-    <section class="header-background small-height">
+    <section class="small-height d-none">
         <div class="w-100 h-100 bg-black d-flex text-center align-items-center">
             <div class="container text-white">
                 <h1 class="font-h1-xl"><?php the_title(); ?></h1>

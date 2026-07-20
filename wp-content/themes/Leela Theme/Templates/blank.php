@@ -10,7 +10,7 @@ get_header(); ?>
 
 <img src="https://leelaholdings.in/wp-content/uploads/2026/07/img1.jpg" width="100%" alt="main">
 
-    <div class="container py-5">
+    <div class="">
         <?php
         while ( have_posts() ) :
             the_post();

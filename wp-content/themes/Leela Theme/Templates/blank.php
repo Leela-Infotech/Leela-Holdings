@@ -20,11 +20,11 @@ get_header(); ?>
     </div>
 
     <!-- Services Section -->
-    <?php 
-     get_template_part('template-parts/CTA/c');
-     get_template_part('template-parts/services_infotech');
+    <!-- <?php 
+    //  get_template_part('template-parts/CTA/c');
+    //  get_template_part('template-parts/services_infotech');
 
-      ?>
+      ?> -->
 </main>
 
 <?php

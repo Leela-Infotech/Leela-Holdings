@@ -99,7 +99,7 @@ $images = [
                 </div>
             </div>
         </section>
-<?php } else if ( ! is_page(528) ) { ?>
+<?php } else if (is_page(528) ) { ?>
 
     <section class="small-height d-none">
         <div class="w-100 h-100 bg-black d-flex text-center align-items-center">
